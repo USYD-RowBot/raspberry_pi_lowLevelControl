@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>lowLevelNav</name>
+  <name>lowLevelHardware</name>
   <version>0.0.0</version>
   <description>The lowLevelNav package</description>
 

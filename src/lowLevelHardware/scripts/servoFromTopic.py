@@ -12,7 +12,7 @@ PWM_MAX=rospy.get_param("val_max",100)
 PWM_MIN=rospy.get_param("val_min",0)
 TIME_MAX=rospy.get_param("time_max",2.00)# in ms
 TIME_MIN=rospy.get_param("time_min",1.00)
-
+topic=rospy.get_param("topic","thrust")
 pwm=navio.pwm.PWM(PWM_OUTPUT)
 pwm.set_period(50)
 pwm.enable()
@@ -28,9 +28,6 @@ def callback(data):
     # set the servo power
 	rospy.loginfo(rospy.get_caller_id()+ "%s", data.data)
 
-rospy.init_node("echobot")
-rospy.Subscriber("chatter",,callback)
+rospy.init_node("servoNode",anonymous=True)
+rospy.Subscriber(topic,Int32,callback)
 rospy.spin()
-
-
-#!/usr/bin/env python

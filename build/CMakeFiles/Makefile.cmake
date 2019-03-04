@@ -15,9 +15,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "echobot/catkin_generated/ordered_paths.cmake"
   "echobot/catkin_generated/package.cmake"
+  "lowLevelHardware/catkin_generated/ordered_paths.cmake"
+  "lowLevelHardware/catkin_generated/package.cmake"
   "/home/pi/catkin_ws/src/CMakeLists.txt"
   "/home/pi/catkin_ws/src/echobot/CMakeLists.txt"
   "/home/pi/catkin_ws/src/echobot/package.xml"
+  "/home/pi/catkin_ws/src/lowLevelHardware/CMakeLists.txt"
+  "/home/pi/catkin_ws/src/lowLevelHardware/package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/../package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
   "/opt/ros/kinetic/share/catkin/cmake/assert.cmake"
@@ -144,6 +148,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "echobot/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lowLevelHardware/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

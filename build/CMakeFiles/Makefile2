@@ -587,6 +587,24 @@ clean: echobot/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory lowLevelHardware
+
+# Convenience name for "all" pass in the directory.
+lowLevelHardware/all:
+
+.PHONY : lowLevelHardware/all
+
+# Convenience name for "clean" pass in the directory.
+lowLevelHardware/clean:
+
+.PHONY : lowLevelHardware/clean
+
+# Convenience name for "preinstall" pass in the directory.
+lowLevelHardware/preinstall:
+
+.PHONY : lowLevelHardware/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

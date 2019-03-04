@@ -47,3 +47,10 @@
 /home/pi/catkin_ws/build/echobot/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/pi/catkin_ws/build/echobot/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /home/pi/catkin_ws/build/echobot/CMakeFiles/install.dir
+/home/pi/catkin_ws/build/lowLevelHardware/CMakeFiles/install/local.dir
+/home/pi/catkin_ws/build/lowLevelHardware/CMakeFiles/install.dir
+/home/pi/catkin_ws/build/lowLevelHardware/CMakeFiles/test.dir
+/home/pi/catkin_ws/build/lowLevelHardware/CMakeFiles/list_install_components.dir
+/home/pi/catkin_ws/build/lowLevelHardware/CMakeFiles/install/strip.dir
+/home/pi/catkin_ws/build/lowLevelHardware/CMakeFiles/edit_cache.dir
+/home/pi/catkin_ws/build/lowLevelHardware/CMakeFiles/rebuild_cache.dir

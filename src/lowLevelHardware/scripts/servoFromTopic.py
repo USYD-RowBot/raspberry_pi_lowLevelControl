@@ -20,13 +20,14 @@ pwm.enable()
 def callback(data):
     scaled=data.data;
     # clip the range
-    if (scaled>PWM_MAX)scaled=PWM_MAX
-    if (scaled<PWM_MIN)scaled=PWM_MIN
+    if (scaled>PWM_MAX):
+        scaled=PWM_MAX
+    if (scaled<PWM_MIN):
+       scaled=PWM_MIN
     # get the corresponding value
     scaled=(scaled-PWM_MIN)/(PWM_MAX-PWM_MIN)*(TIME_MAX-TIME_MIN)+TIME_MIN;
     pwm.set_duty_cycle(scaled)
     # set the servo power
-	rospy.loginfo(rospy.get_caller_id()+ "%s", data.data)
 
 rospy.init_node("servoNode",anonymous=True)
 rospy.Subscriber(topic,Int32,callback)

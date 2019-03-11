@@ -605,6 +605,24 @@ lowLevelHardware/preinstall:
 .PHONY : lowLevelHardware/preinstall
 
 #=============================================================================
+# Directory level rules for directory remote_control
+
+# Convenience name for "all" pass in the directory.
+remote_control/all:
+
+.PHONY : remote_control/all
+
+# Convenience name for "clean" pass in the directory.
+remote_control/clean:
+
+.PHONY : remote_control/clean
+
+# Convenience name for "preinstall" pass in the directory.
+remote_control/preinstall:
+
+.PHONY : remote_control/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

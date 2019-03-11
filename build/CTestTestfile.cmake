@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("echobot")
 subdirs("lowLevelHardware")
+subdirs("remote_control")

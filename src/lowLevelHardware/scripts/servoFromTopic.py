@@ -23,7 +23,7 @@ with navio.pwm.PWM(PWM_OUTPUT) as pwm:
         if (scaled>PWM_MAX):
             scaled=PWM_MAX
         if (scaled<PWM_MIN):
-        scaled=PWM_MIN
+            scaled=PWM_MIN
         # get the corresponding value
         scaled=(scaled-PWM_MIN)/(PWM_MAX-PWM_MIN)*(TIME_MAX-TIME_MIN)+TIME_MIN;
         pwm.set_duty_cycle(scaled)

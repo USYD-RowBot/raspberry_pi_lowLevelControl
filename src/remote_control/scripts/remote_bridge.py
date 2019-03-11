@@ -110,10 +110,10 @@ try:
             servo_position[ch_id] = s_pos
 
         # remap all variables
-        mapped_servo_position = [int(CHANNEL_OUT_MIN+(CHANNEL_OUT_MAX-CHANNEL_OUT_MIN)*(servo_position[i]-CHANNEL_MIN)/(CHANNEL_MAX-CHANNEL_MIN) for i in range(6)];
+        mapped_servo_position = [int(CHANNEL_OUT_MIN+(CHANNEL_OUT_MAX-CHANNEL_OUT_MIN)*(servo_position[i]-CHANNEL_MIN)/(CHANNEL_MAX-CHANNEL_MIN)) for i in range(6)];
 
         # publish to all channels
-        [publishers[i].publish(mapped_servo_position[i]) if ENABLED[i] for i in range(6)]
+        [publishers[i].publish(mapped_servo_position[i]) if ENABLED[i] else None for i in range(6)]
 
         #? echo a 'received' to the serial? perhaps? not sure
         ser.write(data_buf)

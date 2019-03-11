@@ -35,7 +35,6 @@ def align_serial(ser):
     ser: serial.Serial instance
         serial port to read from
     """
-    data = None
     # read in the first byte, might be a long delay in case the transmitter is
     # off when the program begins
     ser.read(1)
@@ -53,7 +52,7 @@ def align_serial(ser):
 MASK_CH_ID = 0b01111000 # 0x78
 SHIFT_CH_ID = 3
 MASK_SERVO_POS_HIGH = 0b00000111 # 0x07
-
+data = None
 def parse_channel_data(data):
     """Parse a channel's 2 bytes of data in a remote receiver packet
     Inputs
@@ -110,10 +109,10 @@ try:
             servo_position[ch_id] = s_pos
 
         # remap all variables
-        mapped_servo_position = [int(CHANNEL_OUT_MIN+(CHANNEL_OUT_MAX-CHANNEL_OUT_MIN)*(servo_position[i]-CHANNEL_MIN)/(CHANNEL_MAX-CHANNEL_MIN) for i in range(6)];
+        mapped_servo_position = [int(CHANNEL_OUT_MIN+(CHANNEL_OUT_MAX-CHANNEL_OUT_MIN)*(servo_position[i]-CHANNEL_MIN)/(CHANNEL_MAX-CHANNEL_MIN)) for i in range(6)]
 
         # publish to all channels
-        [publishers[i].publish(mapped_servo_position[i]) if ENABLED[i] for i in range(6)]
+        [publishers[i].publish(mapped_servo_position[i]) if ENABLED[i]==True else None for i in range(6)]
 
         #? echo a 'received' to the serial? perhaps? not sure
         ser.write(data_buf)
@@ -124,3 +123,4 @@ except(Exception) as ex:
     ser.close()
 #shutdown
 ser.close()
+sys.exit()

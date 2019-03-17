@@ -1,9 +1,12 @@
 #!/usr/bin/env python
+from __future__ import print_function
+# so i can use it with my list comprehensions
 import rospy
 from std_msgs.msg import Int32
 import sys
 import time
 import serial
+
 
 ## Following code is modified code based on code from samfok on github:
 ## https://github.com/samfok/remote_receiver_tutorial/blob/master/main.py
@@ -75,21 +78,26 @@ def parse_channel_data(data):
 
 
 
-PORT_NAME=rospy.get_param("port",'/dev/ttyUSB0')
+rospy.init_node('remote_control', anonymous=True)
+
+PORT_NAME=rospy.get_param("~port",'/dev/ttyUSB0')
 CHANNEL_DEFAULT_MAX=[1414,1585,1414,1,1,1]
 CHANNEL_DEFAULT_MIN=[1073,1926,1073,0,0,0]
 # get parameters for channels and remapping from ROS
-TOPIC_OUT=[rospy.get_param("topic_out{0}".format(i),"remote_out_{0}".format(i)) for i in range(6)]
-ENABLED=[rospy.has_param("topic_out{0}".format(i)) for i in range(6)]
-CHANNEL_MAX=[rospy.get_param("chanel_max{0}".format(i),CHANNEL_DEFAULT_MAX[i]) for i in range(6)]
-CHANNEL_MIN=[rospy.get_param("chanel_min{0}".format(i),CHANNEL_DEFAULT_MIN[i]) for i in range(6)]
-CHANNEL_OUT_MAX=[rospy.get_param("chanel_out_max{0}".format(i),CHANNEL_MAX[i]) for i in range(6)]
-CHANNEL_OUT_MIN=[rospy.get_param("chanel_out_min{0}".format(i),CHANNEL_MIN[i]) for i in range(6)]
-
+TOPIC_OUT=[rospy.get_param("~topic_out{0}".format(i),"remote_out_{0}".format(i)) for i in range(6)]
+ENABLED=[rospy.has_param("~topic_out{0}".format(i)) for i in range(6)]
+CHANNEL_MAX=[rospy.get_param("~channel_max{0}".format(i),CHANNEL_DEFAULT_MAX[i]) for i in range(6)]
+CHANNEL_MIN=[rospy.get_param("~channel_min{0}".format(i),CHANNEL_DEFAULT_MIN[i]) for i in range(6)]
+CHANNEL_OUT_MAX=[rospy.get_param("~channel_out_max{0}".format(i),CHANNEL_MAX[i]) for i in range(6)]
+CHANNEL_OUT_MIN=[rospy.get_param("~channel_out_min{0}".format(i),CHANNEL_MIN[i]) for i in range(6)]
+#[print(rospy.get_param("topic_out{0}".format(i))) for i in range(6)]
+#print (rospy.get_param(")
 N_CHAN = 13
 data = None
 servo_position = [0 for i in range(N_CHAN)]
+print("Initialisation: port {0}".format(PORT_NAME))
 
+[print("initialised topic {0} for {1}".format(TOPIC_OUT[i],i)) if ENABLED[i] else None for i in range(6)]
 ser = serial.Serial(
     port=PORT_NAME, baudrate=115200,
     bytesize=serial.EIGHTBITS,
@@ -98,7 +106,6 @@ ser = serial.Serial(
 
 #start ROS
 publishers = [rospy.Publisher(TOPIC_OUT[i], Int32, queue_size=10) if ENABLED[i] else None for i in range(6)]
-rospy.init_node('remote_control', anonymous=True)
 #start the serial
 try:
     align_serial(ser)
@@ -110,7 +117,7 @@ try:
             servo_position[ch_id] = s_pos
 
         # remap all variables
-        mapped_servo_position = [int(CHANNEL_OUT_MIN+(CHANNEL_OUT_MAX-CHANNEL_OUT_MIN)*(servo_position[i]-CHANNEL_MIN)/(CHANNEL_MAX-CHANNEL_MIN)) for i in range(6)];
+        mapped_servo_position = [int(CHANNEL_OUT_MIN[i]+(CHANNEL_OUT_MAX[i]-CHANNEL_OUT_MIN[i])*(servo_position[i]-CHANNEL_MIN[i])/(CHANNEL_MAX[i]-CHANNEL_MIN[i])) for i in range(6)];
 
         # publish to all channels
         [publishers[i].publish(mapped_servo_position[i]) if ENABLED[i] else None for i in range(6)]
@@ -120,7 +127,8 @@ try:
 except(KeyboardInterrupt, SystemExit):
     ser.close()
 except(Exception) as ex:
-    print ex
+    print (ex)
     ser.close()
+print("ok im done")
 #shutdown
 ser.close()

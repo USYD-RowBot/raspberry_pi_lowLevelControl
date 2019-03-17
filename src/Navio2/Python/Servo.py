@@ -10,24 +10,22 @@ navio.util.check_apm()
 PWM_OUTPUT = 0
 SERVO_MIN = 1.200 #ms
 SERVO_MAX = 1.800 #ms
+sequence=[1.500,1,1.600,1]
 
 with navio.pwm.PWM(PWM_OUTPUT) as pwm:
-    pwm.set_period(20)
     pwm.disable()
-    time.sleep(10)
+    pwm.set_period(20)
+    time.sleep(3)
     pwm.enable()
-    pwm.set_duty_cycle(1.500)
-    
-    print("Trying intialisation with 1.5")
-    time.sleep(10)
-
-    print("Ending init")
-
-    print("Run")
-    pwm.set_duty_cycle(SERVO_MAX)
-    time.sleep(10)
-    print("Done")
-    
+    for v,i in enumerate(sequence):
+        if v%2==0:
+         pwm.set_duty_cycle(i)
+         print ("set:{0}".format(i));
+        else:
+         time.sleep(i)
+         print ("wait:{0}".format(i));
+    while True:
+        pwm.set_duty_cycle(1.6);
     #print("Turning on")
     #time.sleep(5)
     #pwm.set_duty_cycle(1.700) # Give it a kick at first

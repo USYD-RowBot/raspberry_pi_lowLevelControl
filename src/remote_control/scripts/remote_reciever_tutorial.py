@@ -5,6 +5,7 @@ packets on the the flight control board
 """
 import serial
 import time
+import datetime
 import sys
 
 def align_serial(ser):
@@ -69,7 +70,7 @@ def parse_channel_data(data):
     ch_data = 988 + (ch_data >> 1)
     return ch_id, ch_data
 
-print("Throttle     Roll    Pitch      Yaw     AUX1     AUX2")
+print("Throttle     Roll    Pitch      Yaw     AUX1     AUX2   Chan6   time")
 ser = serial.Serial(
     port="/dev/ttyUSB0", baudrate=115200,
     bytesize=serial.EIGHTBITS,
@@ -77,7 +78,7 @@ ser = serial.Serial(
     stopbits=serial.STOPBITS_ONE)
 N_CHAN = 13
 data = None
-servo_position = [0 for i in range(N_CHAN)]
+servo_position = [0 for i in range(N_CHAN)+1]
 try:
     align_serial(ser)
     while True:
@@ -86,9 +87,10 @@ try:
         for i in range(7):
             ch_id, s_pos = parse_channel_data(data[2*i:2*i+2])
             servo_position[ch_id] = s_pos
+        servo_position[8]=datetime.datetime.now()
         sys.stdout.write(
-            "    %4d     %4d     %4d     %4d     %4d     %4d\r"%tuple(
-            servo_position[:6]))
+            "    %4d     %4d     %4d     %4d     %4d     %4d   %4d\r"%tuple(
+            servo_position[:7]))
         sys.stdout.flush()
         ser.write(data_buf)
 except(KeyboardInterrupt, SystemExit):

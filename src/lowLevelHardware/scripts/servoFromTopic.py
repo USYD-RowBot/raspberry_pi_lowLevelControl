@@ -6,13 +6,15 @@ import time
 import navio.pwm
 import navio.util
 
+rospy.init_node("servoNode",anonymous=True)
 navio.util.check_apm()
-PWM_OUTPUT=rospy.get_param("srv_num",0)
-PWM_MAX=rospy.get_param("val_max",100)
-PWM_MIN=rospy.get_param("val_min",0)
-TIME_MAX=rospy.get_param("time_max",2.00)# in ms
-TIME_MIN=rospy.get_param("time_min",1.00)
-topic=rospy.get_param("topic","thrust")
+PWM_OUTPUT=rospy.get_param("~srv_num",0)
+PWM_MAX=rospy.get_param("~val_max",100)
+PWM_MIN=rospy.get_param("~val_min",0)
+TIME_MAX=rospy.get_param("~time_max",2.00)# in ms
+TIME_MIN=rospy.get_param("~time_min",1.00)
+topic=rospy.get_param("~topic","thrust")
+print(rospy.get_param("~topic"))
 with navio.pwm.PWM(PWM_OUTPUT) as pwm:
     pwm.set_period(50)
     pwm.enable()
@@ -25,10 +27,8 @@ with navio.pwm.PWM(PWM_OUTPUT) as pwm:
         if (scaled<PWM_MIN):
             scaled=PWM_MIN
         # get the corresponding value
-        scaled=(scaled-PWM_MIN)/(PWM_MAX-PWM_MIN)*(TIME_MAX-TIME_MIN)+TIME_MIN;
+        scaled=(1.0*scaled-1.0*PWM_MIN)/(1.0*PWM_MAX-1.0*PWM_MIN)*(TIME_MAX-TIME_MIN)+TIME_MIN;
         pwm.set_duty_cycle(scaled)
         # set the servo power
-
-    rospy.init_node("servoNode",anonymous=True)
     rospy.Subscriber(topic,Int32,callback)
     rospy.spin()

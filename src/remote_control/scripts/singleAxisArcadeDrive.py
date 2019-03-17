@@ -27,8 +27,10 @@ def Xcallback(data):
     #map from rect to unit square
     if _Xfactor>XAxisCenter:
         Xfactor = (_Xfactor-XAxisCenter)/(XAxisMax-XAxisCenter)
-    else:
+    elif  XAxisCenter != XAxisMin:
         Xfactor = -(XAxisCenter-_Xfactor)/(XAxisCenter-XAxisMin)
+    else:
+        Xfactor=0
     lastXTime=time.time()
 
 def Ycallback(data):
@@ -37,8 +39,10 @@ def Ycallback(data):
     #map from rect to unit square
     if _Yfactor>YAxisCenter:
         Yfactor = (_Yfactor-YAxisCenter)/(YAxisMax-YAxisCenter)
-    else:
+    elif (YAxisCenter!=YAxisMin):
         Yfactor = -(YAxisCenter-_Yfactor)/(YAxisCenter-YAxisMin)
+    else:
+        Yfactor=0
     lastYTime=time.time()
 
 

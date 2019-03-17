@@ -52,7 +52,7 @@ rospy.Subscriber(XAxisTopic,Int32,Xcallback)
 rospy.Subscriber(YAxisTopic,Int32,Ycallback)
 # left and right publishers
 pub=[rospy.Publisher(leftMotorChannel, Int32, queue_size=10),rospy.Publisher(rightMotorChannel, Int32, queue_size=10)]
-
+print("Mapping {0},{1} ==> {2},{3}".format(XAxisTopic,YAxisTopic,leftMotorChannel,rightMotorChannel))
 while not rospy.is_shutdown():
     #convert into radial coords
     rXY=(Xfactor**2+Yfactor**2)**0.5

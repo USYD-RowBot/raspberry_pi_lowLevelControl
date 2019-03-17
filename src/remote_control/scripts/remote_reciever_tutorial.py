@@ -78,7 +78,8 @@ ser = serial.Serial(
     stopbits=serial.STOPBITS_ONE)
 N_CHAN = 13
 data = None
-servo_position = [0 for i in range(N_CHAN)+1]
+servo_position = [0 for i in range(N_CHAN)]
+servo_position.append(0)
 try:
     align_serial(ser)
     while True:
@@ -87,10 +88,11 @@ try:
         for i in range(7):
             ch_id, s_pos = parse_channel_data(data[2*i:2*i+2])
             servo_position[ch_id] = s_pos
-        servo_position[8]=datetime.datetime.now()
+        servo_position[8]=time.time()
+	print servo_position
         sys.stdout.write(
-            "    %4d     %4d     %4d     %4d     %4d     %4d   %4d\r"%tuple(
-            servo_position[:7]))
+            "    %4d     %4d     %4d     %4d     %4d     %4d   %4d    %4d\r"%tuple(
+            servo_position[:8]))
         sys.stdout.flush()
         ser.write(data_buf)
 except(KeyboardInterrupt, SystemExit):

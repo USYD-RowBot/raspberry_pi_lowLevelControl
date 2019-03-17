@@ -3,19 +3,19 @@ import rospy
 from std_msgs.msg import Int32
 import time
 import math
-XAxisTopic=rospy.get_param("axisX","axisX")
-YAxisTopic=rospy.get_param("axisY","axisY")
-XAxisMin=rospy.get_param("axisXMin",0)
-YAxisMin=rospy.get_param("axisYMin",0)
-XAxisMax=rospy.get_param("axisXMax",100)
-YAxisMax=rospy.get_param("axisYMax",100)
-XAxisCenter=rospy.get_param("axisXCtr",(XAxisMin+XAxisMax)/2) 
-YAxisCenter=rospy.get_param("axisYCtr",YAxisMin)# no reversing if this is unset
-maxPower=rospy.get_param("maxPower",100)
-minPower=rospy.get_param("minPower",0)
-centerPower=rospy.get_param("ctrPower",minPower)# if this is unset, no reversing also
-leftMotorChannel=rospy.get_param("LeftMotorChannel","left_motor")
-rightMotorChannel=rospy.get_param("RightMotorChannel","right_motor")
+XAxisTopic=rospy.get_param("~axisX","axisX")
+YAxisTopic=rospy.get_param("~axisY","axisY")
+XAxisMin=rospy.get_param("~axisXMin",0)
+YAxisMin=rospy.get_param("~axisYMin",0)
+XAxisMax=rospy.get_param("~axisXMax",100)
+YAxisMax=rospy.get_param("~axisYMax",100)
+XAxisCenter=rospy.get_param("~axisXCtr",(XAxisMin+XAxisMax)/2) 
+YAxisCenter=rospy.get_param("~axisYCtr",YAxisMin)# no reversing if this is unset
+maxPower=rospy.get_param("~maxPower",100)
+minPower=rospy.get_param("~minPower",0)
+centerPower=rospy.get_param("~ctrPower",minPower)# if this is unset, no reversing also
+leftMotorChannel=rospy.get_param("~LeftMotorChannel","left_motor")
+rightMotorChannel=rospy.get_param("~RightMotorChannel","right_motor")
 deadTimeout=0.01;#s
 lastXTime=0;
 lastYTime=0; # if either signal times out, cut the power.

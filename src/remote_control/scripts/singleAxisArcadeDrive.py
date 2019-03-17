@@ -19,7 +19,8 @@ rightMotorChannel=rospy.get_param("RightMotorChannel","right_motor")
 deadTimeout=0.01;#s
 lastXTime=0;
 lastYTime=0; # if either signal times out, cut the power.
-
+Xfactor=0
+Yfactor=0
 def Xcallback(data):
     global Xfactor
     _Xfactor=data.data;

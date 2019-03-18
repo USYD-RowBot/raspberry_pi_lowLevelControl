@@ -4,10 +4,10 @@ from std_msgs.msg import Int32
 import sys
 import time
 import navio.pwm
-import navio.util
+#import navio.util
 
 rospy.init_node("servoNode",anonymous=True)
-navio.util.check_apm()
+#navio.util.check_apm()
 PWM_OUTPUT=rospy.get_param("~srv_num",0)
 PWM_MAX=rospy.get_param("~val_max",100)
 PWM_MIN=rospy.get_param("~val_min",0)

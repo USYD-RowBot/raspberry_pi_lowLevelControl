@@ -17,9 +17,9 @@ minPower=rospy.get_param("~minPower",0)
 centerPower=rospy.get_param("~ctrPower",minPower)# if this is unset, no reversing also
 leftMotorChannel=rospy.get_param("~LeftMotorChannel","left_motor")
 rightMotorChannel=rospy.get_param("~RightMotorChannel","right_motor")
-deadTimeout=0.01;#s
-lastXTime=0;
-lastYTime=0; # if either signal times out, cut the power.
+deadTimeout=0.1#s - probably reduce this to something less generous :/
+lastXTime=0
+lastYTime=0 # if either signal times out, cut the power.
 Xfactor=0
 Yfactor=0
 def Xcallback(data):
@@ -68,6 +68,6 @@ while not rospy.is_shutdown():
     else: outL=centerPower+sqL*(centerPower-minPower)
     if (sqR>0):outR=centerPower+sqR*(maxPower-centerPower)
     else: outR=centerPower+sqR*(centerPower-minPower)
-    if lastXTime-time.time()<deadTimeout and lastYTime-time.time()<deadTimeout:
+    if time.time()-lastXTime<deadTimeout and time.time()-lastYTime<deadTimeout:
         pub[0].publish(outL)
         pub[0].publish(outR)

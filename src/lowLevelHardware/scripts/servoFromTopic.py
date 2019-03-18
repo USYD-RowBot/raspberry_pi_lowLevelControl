@@ -16,6 +16,7 @@ TIME_MIN=rospy.get_param("~time_min",1.00)
 PRIME_REQUIRED=rospy.get_param("~prime",False)
 topic=rospy.get_param("~topic","thrust")
 print(rospy.get_param("~topic"))
+rospy.sleep(2*PWM_OUTPUT)# to resolve priming errors
 with navio.pwm.PWM(PWM_OUTPUT) as pwm:
     pwm.set_period(50)
     pwm.enable()

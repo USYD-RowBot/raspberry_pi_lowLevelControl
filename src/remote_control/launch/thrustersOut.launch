@@ -29,6 +29,7 @@
     <param name="time_max" value="1.60"/>
     <param name="time_min" value="1.40"/>
     <param name="topic" value="left"/>
+    <param name="prime" value="true"/>
   </node>
   <node name="thrusterRight" pkg="lowLevelHardware" type="servoFromTopic.py" >
     <param name="srv_num" value="1"/>
@@ -37,5 +38,6 @@
     <param name="time_max" value="1.60"/>
     <param name="time_min" value="1.40"/>
     <param name="topic" value="right"/>
+    <param name="prime" value="true"/>
   </node>
 </launch>

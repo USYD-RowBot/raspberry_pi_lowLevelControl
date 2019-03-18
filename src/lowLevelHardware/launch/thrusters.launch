@@ -9,7 +9,7 @@
 	<param name="prime" value="true"/>
   </node>
   <node name="thrusterRight" pkg="lowLevelHardware" type="servoFromTopic.py" >
-    <param name="srv_num" value="1"/>
+    <param name="srv_num" value="3"/>
     <param name="val_max" value="100"/>
     <param name="val_min" value="-100"/>
     <param name="time_max" value="1.60"/>

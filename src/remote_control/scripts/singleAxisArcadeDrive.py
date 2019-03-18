@@ -73,7 +73,7 @@ while not rospy.is_shutdown():
     else: outL=centerPower+sqL*(centerPower-minPower)
     if (sqR>0):outR=centerPower+sqR*(maxPower-centerPower)
     else: outR=centerPower+sqR*(centerPower-minPower)
-    if (rigourousDebug):print("X:{0} Y:{1} rXY:{2} thXY:{3} sqL:{4} sqR:{5} outL:{6} outR:{7}".format(Xfactor,Yfactor,rXY,thXY,sqL,sqR,outL,outR))
+    if (rigourousDebug):print("X:{0:0.00} Y:{1:0.00} rXY:{2:0.00} thXY:{3:0.00} sqL:{4:0.00} sqR:{5:0.00} outL:{6:0.00} outR:{7:0.00}".format(Xfactor,Yfactor,rXY,thXY,sqL,sqR,outL,outR))
     if time.time()-lastXTime<deadTimeout and time.time()-lastYTime<deadTimeout:
         pub[0].publish(outL)
         pub[0].publish(outR)

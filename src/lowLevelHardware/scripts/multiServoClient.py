@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from std_msgs.msg import Float32
+from std_msgs.msg import Int32
 import sys
 import time
 
@@ -51,5 +51,5 @@ def callback(data):
     scaled=(1.0*scaled-1.0*PWM_MIN)/(1.0*PWM_MAX-1.0*PWM_MIN)*(TIME_MAX-TIME_MIN)+TIME_MIN;
     pwmForward(scaled)
     # set the servo power
-rospy.Subscriber(topic,Float32,callback)
+rospy.Subscriber(topic,Int32,callback)
 rospy.spin()

@@ -22,7 +22,7 @@ lastXTime=0
 lastYTime=0 # if either signal times out, cut the power.
 Xfactor=0
 Yfactor=0
-rigourousDebug=True
+rigourousDebug=False
 def Xcallback(data):
     global Xfactor
     global lastXTime
@@ -76,4 +76,4 @@ while not rospy.is_shutdown():
     if (rigourousDebug):print("X:{0:0.00} Y:{1:0.00} rXY:{2:0.00} thXY:{3:0.00} sqL:{4:0.00} sqR:{5:0.00} outL:{6:0.00} outR:{7:0.00}".format(float(Xfactor),float(Yfactor),float(rXY),float(thXY),float(sqL),float(sqR),float(outL),float(outR)))
     if time.time()-lastXTime<deadTimeout and time.time()-lastYTime<deadTimeout:
         pub[0].publish(outL)
-        pub[0].publish(outR)
+        pub[1].publish(outR)

@@ -1,4 +1,3 @@
-
 <launch>
     <node name="remote_control_handler" pkg="remote_control" type="remote_bridge.py" output="screen">
 		<param name="topic_out0" value="axisY" />
@@ -9,8 +8,8 @@
 		<param name="channel_out_min1" value="-100" />
 	</node>
     <node name="arcade_drive" pkg="remote_control" type="singleAxisArcadeDrive.py" output="screen">
-		<param name="axisX" value="axisY" />
-		<param name="axisY" value="axisX" />
+		<param name="axisX" value="axisX" />
+		<param name="axisY" value="axisY" />
 		<param name="axisXMin" value="-100" />
         <param name="axisXMax" value="100" />
         <param name="axisXCtr" value="0" />
@@ -30,9 +29,8 @@
     <param name="time_max" value="1.60"/>
     <param name="time_min" value="1.40"/>
     <param name="topic" value="left"/>
-<param name="topicOut" value="servo0"/>
-	<param name="prime" value="true"/>
-
+    <param name="prime" value="true"/>
+    <param name="topicOut" value="servo0"
   </node>
   
   <node name="thrusterRight" pkg="lowLevelHardware" type="multiServoClient.py" >
@@ -42,9 +40,12 @@
     <param name="time_max" value="1.60"/>
     <param name="time_min" value="1.40"/>
     <param name="topic" value="right"/>
-<param name="topicOut" value="servo1"/>
+<<<<<<< HEAD
+    <param name="prime" value="true"/>
+=======
+	<param name="topicOut" value="servo1"/>
 	<param name="prime" value="true"/>
-
+>>>>>>> 5625c0f32e2faa2e9f7cbd73461c6b68258003b9
   </node>
   <node name="servoController" pkg="lowLevelHardware" type="multiServoFromTopic.py" >
     <param name="servoTopic0" value="servo0"/>

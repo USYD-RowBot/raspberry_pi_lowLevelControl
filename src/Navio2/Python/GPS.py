@@ -38,23 +38,25 @@ if __name__ == "__main__":
     ubl.configure_message_rate(navio.ublox.CLASS_NAV, navio.ublox.MSG_NAV_TIMEGPS, 5)
     ubl.configure_message_rate(navio.ublox.CLASS_NAV, navio.ublox.MSG_NAV_CLOCK, 5)
     #ubl.configure_message_rate(navio.ublox.CLASS_NAV, navio.ublox.MSG_NAV_DGPS, 5)
-
+    f = open("log.txt","w+")
     while True:
         msg = ubl.receive_message()
         if msg is None:
-            if opts.reopen:
-                ubl.close()
-                ubl = navio.ublox.UBlox("spi:0.0", baudrate=5000000, timeout=2)
-                continue
-            print(empty)
+            pass;
+            #if opts.reopen:
+            #    ubl.close()
+            #    ubl = navio.ublox.UBlox("spi:0.0", baudrate=5000000, timeout=2)
+            #    continue
+            #print(empty)
             break
         #print(msg.name())
         if msg.name() == "NAV_POSLLH":
             outstr = str(msg).split(",")[1:]
             outstr = "".join(outstr)
-            print(outstr)
+            f.write(outstr+"\r\n");
         if msg.name() == "NAV_STATUS":
             outstr = str(msg).split(",")[1:2]
             outstr = "".join(outstr)
-            print(outstr)
+            f.write(outstr+"\r\n");
+            #print(outstr)
         #print(str(msg))

@@ -22,8 +22,10 @@ lastXTime=0
 lastYTime=0 # if either signal times out, cut the power.
 Xfactor=0
 Yfactor=0
+rigourousDebug=False
 def Xcallback(data):
     global Xfactor
+    global lastXTime
     _Xfactor=data.data;
     #map from rect to unit square
     if _Xfactor>XAxisCenter:
@@ -33,9 +35,11 @@ def Xcallback(data):
     else:
         Xfactor=0
     lastXTime=time.time()
+    if (rigourousDebug):print("X:{0}@{1}".format(Xfactor,lastXTime))
 
 def Ycallback(data):
     global Yfactor
+    global lastYTime
     _Yfactor=data.data;
     #map from rect to unit square
     if _Yfactor>YAxisCenter:
@@ -45,6 +49,7 @@ def Ycallback(data):
     else:
         Yfactor=0
     lastYTime=time.time()
+    if (rigourousDebug):print("Y:{0}@{1}".format(Yfactor,lastYTime))
 
 
 

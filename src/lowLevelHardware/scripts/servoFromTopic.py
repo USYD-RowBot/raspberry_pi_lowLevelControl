@@ -22,16 +22,16 @@ with navio.pwm.PWM(PWM_OUTPUT) as pwm:
     if (PRIME_REQUIRED):
         # perform a priming sequence, by setting to zero, 0.5, 0 for some time.
         
-        rate=rospy.Rate(100)
-        for i in range(100):
+        rate=rospy.Rate(1000)
+        for i in range(2000):
+            pwm.set_duty_cycle((TIME_MAX+TIME_MIN)/2)
+            rate.sleep()
+
+        for i in range(2000):
             pwm.set_duty_cycle((TIME_MAX*1.5+TIME_MIN*0.5)/2)
             rate.sleep()
 
-        for i in range(100):
-            pwm.set_duty_cycle((TIME_MAX*1.5+TIME_MIN*0.5)/2)
-            rate.sleep()
-
-        for i in range(100):
+        for i in range(2000):
             pwm.set_duty_cycle((TIME_MAX+TIME_MIN)/2)
             rate.sleep()
         #priming done!

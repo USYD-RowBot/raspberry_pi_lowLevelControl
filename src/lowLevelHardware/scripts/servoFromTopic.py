@@ -13,12 +13,29 @@ PWM_MAX=rospy.get_param("~val_max",100)
 PWM_MIN=rospy.get_param("~val_min",0)
 TIME_MAX=rospy.get_param("~time_max",2.00)# in ms
 TIME_MIN=rospy.get_param("~time_min",1.00)
+PRIME_REQUIRED=rospy.get_param("~prime",False)
 topic=rospy.get_param("~topic","thrust")
 print(rospy.get_param("~topic"))
 with navio.pwm.PWM(PWM_OUTPUT) as pwm:
     pwm.set_period(50)
     pwm.enable()
+    if (PRIME_REQUIRED):
+        # perform a priming sequence, by setting to zero, 0.5, 0 for some time.
+        
+        rate=rospy.Rate(100)
+        for i in range(100):
+            pwm.set_duty_cycle((TIME_MAX*1.5+TIME_MIN*0.5)/2)
+            rate.sleep()
 
+        for i in range(100):
+            pwm.set_duty_cycle((TIME_MAX*1.5+TIME_MIN*0.5)/2)
+            rate.sleep()
+
+        for i in range(100):
+            pwm.set_duty_cycle((TIME_MAX+TIME_MIN)/2)
+            rate.sleep()
+        #priming done!
+    
     def callback(data):
         scaled=data.data;
         # clip the range

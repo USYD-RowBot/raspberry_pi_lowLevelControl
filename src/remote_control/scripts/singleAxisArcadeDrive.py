@@ -3,6 +3,7 @@ import rospy
 from std_msgs.msg import Int32
 import time
 import math
+rospy.init_node('singleAxisArcadeDrive', anonymous=True)
 XAxisTopic=rospy.get_param("~axisX","axisX")
 YAxisTopic=rospy.get_param("~axisY","axisY")
 XAxisMin=rospy.get_param("~axisXMin",0)
@@ -46,7 +47,7 @@ def Ycallback(data):
     lastYTime=time.time()
 
 
-rospy.init_node('singleAxisArcadeDrive', anonymous=True)
+
 # left and right subscribers
 rospy.Subscriber(XAxisTopic,Int32,Xcallback)
 rospy.Subscriber(YAxisTopic,Int32,Ycallback)

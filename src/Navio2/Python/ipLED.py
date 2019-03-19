@@ -23,10 +23,6 @@ navio.util.check_apm()
 
 led = navio.leds.Led()
 
-led.setColor('Yellow')
-print "LED is yellow"
-time.sleep(1)
-
 # fetch our IP address
 trueIP = get_ip()
 # trueIP=trueIP.split(".")
@@ -41,6 +37,10 @@ while (True):
                 time.sleep(0.2)
         except Exception:
             led.setColor('Red')
-            time.sleep(0.2)
+            time.sleep(0.5)
             led.setColor('Black')
-            time.sleep(0.2)
+            time.sleep(0.5)
+    led.setColor('Blue')
+    time.sleep(0.5)
+    led.setColor('Black')
+    time.sleep(0.5)

@@ -26,7 +26,7 @@ rigourousDebug=False
 def Xcallback(data):
     global Xfactor
     global lastXTime
-    _Xfactor=float(data.data);
+    _Xfactor=float(data.data)
     #map from rect to unit square
     if _Xfactor>XAxisCenter:
         Xfactor = (_Xfactor-XAxisCenter)/(XAxisMax-XAxisCenter)
@@ -40,7 +40,7 @@ def Xcallback(data):
 def Ycallback(data):
     global Yfactor
     global lastYTime
-    _Yfactor=float(data.data);
+    _Yfactor=float(data.data)
     #map from rect to unit square
     if _Yfactor>YAxisCenter:
         Yfactor = (_Yfactor-YAxisCenter)/(YAxisMax-YAxisCenter)

@@ -22,11 +22,11 @@ lastXTime=0
 lastYTime=0 # if either signal times out, cut the power.
 Xfactor=0
 Yfactor=0
-rigourousDebug=True
+rigourousDebug=False
 def Xcallback(data):
     global Xfactor
     global lastXTime
-    _Xfactor=data.data;
+    _Xfactor=float(data.data);
     #map from rect to unit square
     if _Xfactor>XAxisCenter:
         Xfactor = (_Xfactor-XAxisCenter)/(XAxisMax-XAxisCenter)
@@ -35,12 +35,12 @@ def Xcallback(data):
     else:
         Xfactor=0
     lastXTime=time.time()
-    if (rigourousDebug):print("X:{0}@{1}".format(Xfactor,lastXTime))
+    #if (rigourousDebug):print("X:{0}@{1}".format(Xfactor,lastXTime))
 
 def Ycallback(data):
     global Yfactor
     global lastYTime
-    _Yfactor=data.data;
+    _Yfactor=float(data.data);
     #map from rect to unit square
     if _Yfactor>YAxisCenter:
         Yfactor = (_Yfactor-YAxisCenter)/(YAxisMax-YAxisCenter)
@@ -49,7 +49,7 @@ def Ycallback(data):
     else:
         Yfactor=0
     lastYTime=time.time()
-    if (rigourousDebug):print("Y:{0}@{1}".format(Yfactor,lastYTime))
+    #if (rigourousDebug):print("Y:{0}@{1}".format(Yfactor,lastYTime))
 
 
 
@@ -73,7 +73,7 @@ while not rospy.is_shutdown():
     else: outL=centerPower+sqL*(centerPower-minPower)
     if (sqR>0):outR=centerPower+sqR*(maxPower-centerPower)
     else: outR=centerPower+sqR*(centerPower-minPower)
-    if (rigourousDebug):print("X:{0:0.00} Y:{1:0.00} rXY:{2:0.00} thXY:{3:0.00} sqL:{4:0.00} sqR:{5:0.00} outL:{6:0.00} outR:{7:0.00}".format(Xfactor,Yfactor,rXY,thXY,sqL,sqR,outL,outR))
+    if (rigourousDebug):print("X:{0:0.00} Y:{1:0.00} rXY:{2:0.00} thXY:{3:0.00} sqL:{4:0.00} sqR:{5:0.00} outL:{6:0.00} outR:{7:0.00}".format(float(Xfactor),float(Yfactor),float(rXY),float(thXY),float(sqL),float(sqR),float(outL),float(outR)))
     if time.time()-lastXTime<deadTimeout and time.time()-lastYTime<deadTimeout:
         pub[0].publish(outL)
-        pub[0].publish(outR)
+        pub[1].publish(outR)

@@ -19,11 +19,13 @@ def callback(pwm,val):
 def startPWM(i):
     global pwm
     global PWM_TOPIC
-    if pwm(i) is None:
+    if pwm[i] is None:
         return
-    pwm(i).set_period(50);
-    pwm(i).enable()
-    rospy.Subscriber(PWM_TOPIC(i),Float32,lambda data: callback(pwm(i),data.data))
+    pwm[i].initialize()
+    pwm[i].set_period(50);
+    pwm[i].enable()
+    rospy.Subscriber(PWM_TOPIC[i],Float32,lambda data: callback(pwm[i],data.data))
 
 [startPWM(i) for i in range(num_pwms)]
 rospy.spin()
+[pwm[i].deinitialize() if PWM_ENABLED[i] else None for i in range(num_pwms)]

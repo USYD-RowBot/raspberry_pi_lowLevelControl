@@ -1,0 +1,610 @@
+ gpsFix=3
+ Longitude=1511992931 Latitude=-338867281 height=54317 hMSL=35132 hAcc=1694 vAcc=3057
+ gpsFix=3
+ Longitude=1511992945 Latitude=-338867288 height=54301 hMSL=35117 hAcc=1671 vAcc=3004
+ gpsFix=3
+ Longitude=1511992957 Latitude=-338867297 height=54324 hMSL=35139 hAcc=1647 vAcc=2954
+ gpsFix=3
+ Longitude=1511992963 Latitude=-338867300 height=54360 hMSL=35175 hAcc=1628 vAcc=2911
+ gpsFix=3
+ Longitude=1511992967 Latitude=-338867301 height=54398 hMSL=35213 hAcc=1612 vAcc=2870
+ gpsFix=3
+ Longitude=1511992967 Latitude=-338867301 height=54440 hMSL=35256 hAcc=1597 vAcc=2834
+ gpsFix=3
+ Longitude=1511992965 Latitude=-338867301 height=54488 hMSL=35303 hAcc=1581 vAcc=2796
+ gpsFix=3
+ Longitude=1511992962 Latitude=-338867300 height=54572 hMSL=35387 hAcc=1567 vAcc=2756
+ gpsFix=3
+ Longitude=1511992954 Latitude=-338867296 height=54749 hMSL=35564 hAcc=1557 vAcc=2710
+ gpsFix=3
+ Longitude=1511992953 Latitude=-338867295 height=54995 hMSL=35810 hAcc=1544 vAcc=2670
+ gpsFix=3
+ Longitude=1511992958 Latitude=-338867306 height=54861 hMSL=35677 hAcc=1537 vAcc=2663
+ gpsFix=3
+ Longitude=1511992977 Latitude=-338867314 height=54811 hMSL=35626 hAcc=1535 vAcc=2657
+ gpsFix=3
+ Longitude=1511992974 Latitude=-338867323 height=54693 hMSL=35508 hAcc=1536 vAcc=2650
+ gpsFix=3
+ Longitude=1511992978 Latitude=-338867336 height=54407 hMSL=35222 hAcc=1545 vAcc=2688
+ gpsFix=3
+ Longitude=1511992973 Latitude=-338867343 height=54625 hMSL=35440 hAcc=1556 vAcc=2682
+ gpsFix=3
+ Longitude=1511992969 Latitude=-338867339 height=54959 hMSL=35774 hAcc=1549 vAcc=2667
+ gpsFix=3
+ Longitude=1511992935 Latitude=-338867345 height=54679 hMSL=35494 hAcc=1537 vAcc=2644
+ gpsFix=3
+ Longitude=1511992925 Latitude=-338867357 height=54434 hMSL=35249 hAcc=1524 vAcc=2621
+ gpsFix=3
+ Longitude=1511992913 Latitude=-338867358 height=54387 hMSL=35203 hAcc=1513 vAcc=2594
+ gpsFix=3
+ Longitude=1511992916 Latitude=-338867369 height=54136 hMSL=34952 hAcc=1491 vAcc=2559
+ gpsFix=3
+ Longitude=1511992928 Latitude=-338867370 height=54170 hMSL=34985 hAcc=1474 vAcc=2533
+ gpsFix=3
+ Longitude=1511992927 Latitude=-338867372 height=54528 hMSL=35343 hAcc=1469 vAcc=2495
+ gpsFix=3
+ Longitude=1511992907 Latitude=-338867367 height=55254 hMSL=36069 hAcc=1465 vAcc=2461
+ gpsFix=3
+ Longitude=1511992910 Latitude=-338867360 height=55553 hMSL=36368 hAcc=1449 vAcc=2409
+ gpsFix=3
+ Longitude=1511992943 Latitude=-338867356 height=55624 hMSL=36439 hAcc=1478 vAcc=2458
+ gpsFix=3
+ Longitude=1511992946 Latitude=-338867365 height=55733 hMSL=36549 hAcc=1487 vAcc=2442
+ gpsFix=3
+ Longitude=1511992945 Latitude=-338867366 height=55995 hMSL=36811 hAcc=1494 vAcc=2446
+ gpsFix=3
+ Longitude=1511992934 Latitude=-338867362 height=56088 hMSL=36904 hAcc=1510 vAcc=2483
+ gpsFix=3
+ Longitude=1511992925 Latitude=-338867370 height=56222 hMSL=37038 hAcc=1498 vAcc=2445
+ gpsFix=3
+ Longitude=1511992907 Latitude=-338867367 height=56734 hMSL=37549 hAcc=1487 vAcc=2409
+ gpsFix=3
+ Longitude=1511992898 Latitude=-338867371 height=57026 hMSL=37841 hAcc=1480 vAcc=2383
+ gpsFix=3
+ Longitude=1511992878 Latitude=-338867328 height=57042 hMSL=37857 hAcc=1519 vAcc=2440
+ gpsFix=3
+ Longitude=1511992906 Latitude=-338867360 height=56679 hMSL=37494 hAcc=1552 vAcc=2484
+ gpsFix=3
+ Longitude=1511992943 Latitude=-338867400 height=56434 hMSL=37249 hAcc=1568 vAcc=2526
+ gpsFix=3
+ Longitude=1511992932 Latitude=-338867409 height=56097 hMSL=36912 hAcc=1609 vAcc=2618
+ gpsFix=3
+ Longitude=1511992886 Latitude=-338867414 height=55944 hMSL=36759 hAcc=1635 vAcc=2611
+ gpsFix=3
+ Longitude=1511992892 Latitude=-338867361 height=56701 hMSL=37517 hAcc=1652 vAcc=2654
+ gpsFix=3
+ Longitude=1511992876 Latitude=-338867324 height=57044 hMSL=37859 hAcc=1664 vAcc=2656
+ gpsFix=3
+ Longitude=1511992884 Latitude=-338867311 height=56957 hMSL=37772 hAcc=1702 vAcc=2721
+ gpsFix=3
+ Longitude=1511992884 Latitude=-338867308 height=56724 hMSL=37539 hAcc=1727 vAcc=2739
+ gpsFix=3
+ Longitude=1511992877 Latitude=-338867312 height=56593 hMSL=37409 hAcc=1739 vAcc=2750
+ gpsFix=3
+ Longitude=1511992907 Latitude=-338867276 height=56285 hMSL=37100 hAcc=1779 vAcc=2821
+ gpsFix=3
+ Longitude=1511992922 Latitude=-338867267 height=56020 hMSL=36836 hAcc=1824 vAcc=2859
+ gpsFix=3
+ Longitude=1511992910 Latitude=-338867280 height=56371 hMSL=37186 hAcc=1822 vAcc=2838
+ gpsFix=3
+ Longitude=1511992902 Latitude=-338867273 height=55966 hMSL=36781 hAcc=1826 vAcc=2877
+ gpsFix=3
+ Longitude=1511992905 Latitude=-338867306 height=55058 hMSL=35874 hAcc=1814 vAcc=2863
+ gpsFix=3
+ Longitude=1511992908 Latitude=-338867318 height=54836 hMSL=35652 hAcc=1824 vAcc=2889
+ gpsFix=3
+ Longitude=1511992887 Latitude=-338867320 height=54697 hMSL=35513 hAcc=1810 vAcc=2857
+ gpsFix=3
+ Longitude=1511992860 Latitude=-338867310 height=55858 hMSL=36674 hAcc=1804 vAcc=2860
+ gpsFix=3
+ Longitude=1511992849 Latitude=-338867290 height=55982 hMSL=36797 hAcc=1823 vAcc=2893
+ gpsFix=3
+ Longitude=1511992817 Latitude=-338867258 height=56660 hMSL=37476 hAcc=1822 vAcc=2859
+ gpsFix=3
+ Longitude=1511992766 Latitude=-338867256 height=56935 hMSL=37750 hAcc=1820 vAcc=2902
+ gpsFix=3
+ Longitude=1511992740 Latitude=-338867245 height=56407 hMSL=37222 hAcc=1822 vAcc=2932
+ gpsFix=3
+ Longitude=1511992756 Latitude=-338867273 height=56595 hMSL=37410 hAcc=1787 vAcc=2888
+ gpsFix=3
+ Longitude=1511992762 Latitude=-338867274 height=56695 hMSL=37510 hAcc=1776 vAcc=2878
+ gpsFix=3
+ Longitude=1511992779 Latitude=-338867289 height=56331 hMSL=37146 hAcc=1754 vAcc=2854
+ gpsFix=3
+ Longitude=1511992777 Latitude=-338867295 height=56203 hMSL=37018 hAcc=1755 vAcc=2848
+ gpsFix=3
+ Longitude=1511992773 Latitude=-338867309 height=56308 hMSL=37123 hAcc=1776 vAcc=2876
+ gpsFix=3
+ Longitude=1511992773 Latitude=-338867345 height=56310 hMSL=37125 hAcc=1835 vAcc=2940
+ gpsFix=3
+ Longitude=1511992768 Latitude=-338867401 height=56356 hMSL=37171 hAcc=1865 vAcc=2945
+ gpsFix=3
+ Longitude=1511992739 Latitude=-338867469 height=56495 hMSL=37310 hAcc=1909 vAcc=3038
+ gpsFix=3
+ Longitude=1511992710 Latitude=-338867523 height=56347 hMSL=37163 hAcc=2224 vAcc=3192
+ gpsFix=3
+ Longitude=1511992673 Latitude=-338867560 height=56374 hMSL=37190 hAcc=2426 vAcc=3451
+ gpsFix=3
+ Longitude=1511992575 Latitude=-338867669 height=55878 hMSL=36694 hAcc=2571 vAcc=3721
+ gpsFix=3
+ Longitude=1511992600 Latitude=-338867733 height=56039 hMSL=36855 hAcc=2795 vAcc=4055
+ gpsFix=3
+ Longitude=1511992542 Latitude=-338867695 height=55754 hMSL=36570 hAcc=3179 vAcc=4561
+ gpsFix=3
+ Longitude=1511992626 Latitude=-338867670 height=52092 hMSL=32908 hAcc=3273 vAcc=4524
+ gpsFix=3
+ Longitude=1511992641 Latitude=-338867676 height=52151 hMSL=32967 hAcc=3333 vAcc=4686
+ gpsFix=3
+ Longitude=1511992670 Latitude=-338867686 height=51682 hMSL=32498 hAcc=3450 vAcc=4984
+ gpsFix=3
+ Longitude=1511992721 Latitude=-338867666 height=50960 hMSL=31775 hAcc=3428 vAcc=5017
+ gpsFix=3
+ Longitude=1511992729 Latitude=-338867536 height=50654 hMSL=31469 hAcc=3322 vAcc=4758
+ gpsFix=3
+ Longitude=1511992728 Latitude=-338867460 height=50139 hMSL=30954 hAcc=3210 vAcc=4586
+ gpsFix=3
+ Longitude=1511992716 Latitude=-338867425 height=49719 hMSL=30535 hAcc=3096 vAcc=4453
+ gpsFix=3
+ Longitude=1511992622 Latitude=-338867440 height=49285 hMSL=30101 hAcc=3025 vAcc=4402
+ gpsFix=3
+ Longitude=1511992633 Latitude=-338867426 height=48619 hMSL=29434 hAcc=3002 vAcc=4396
+ gpsFix=3
+ Longitude=1511992660 Latitude=-338867443 height=49037 hMSL=29852 hAcc=2967 vAcc=4332
+ gpsFix=3
+ Longitude=1511992714 Latitude=-338867428 height=49817 hMSL=30632 hAcc=2923 vAcc=4282
+ gpsFix=3
+ Longitude=1511992753 Latitude=-338867385 height=50446 hMSL=31261 hAcc=2871 vAcc=4265
+ gpsFix=3
+ Longitude=1511992804 Latitude=-338867375 height=50585 hMSL=31401 hAcc=2813 vAcc=4194
+ gpsFix=3
+ Longitude=1511992816 Latitude=-338867353 height=50645 hMSL=31461 hAcc=2767 vAcc=4165
+ gpsFix=3
+ Longitude=1511992772 Latitude=-338867349 height=51251 hMSL=32066 hAcc=2696 vAcc=4075
+ gpsFix=3
+ Longitude=1511992794 Latitude=-338867375 height=50542 hMSL=31357 hAcc=2668 vAcc=4053
+ gpsFix=3
+ Longitude=1511992812 Latitude=-338867383 height=50744 hMSL=31559 hAcc=2633 vAcc=4001
+ gpsFix=3
+ Longitude=1511992816 Latitude=-338867360 height=51350 hMSL=32166 hAcc=2637 vAcc=4011
+ gpsFix=3
+ Longitude=1511992829 Latitude=-338867358 height=51547 hMSL=32362 hAcc=2611 vAcc=3970
+ gpsFix=3
+ Longitude=1511992880 Latitude=-338867336 height=52648 hMSL=33464 hAcc=2580 vAcc=3943
+ gpsFix=3
+ Longitude=1511992863 Latitude=-338867331 height=53165 hMSL=33980 hAcc=2761 vAcc=4233
+ gpsFix=3
+ Longitude=1511992868 Latitude=-338867314 height=53323 hMSL=34138 hAcc=2541 vAcc=3915
+ gpsFix=3
+ Longitude=1511992837 Latitude=-338867306 height=54411 hMSL=35226 hAcc=2475 vAcc=3841
+ gpsFix=3
+ Longitude=1511992870 Latitude=-338867294 height=54374 hMSL=35190 hAcc=2477 vAcc=3873
+ gpsFix=3
+ Longitude=1511992894 Latitude=-338867277 height=54724 hMSL=35539 hAcc=2439 vAcc=3787
+ gpsFix=3
+ Longitude=1511992889 Latitude=-338867285 height=55293 hMSL=36109 hAcc=2410 vAcc=3744
+ gpsFix=3
+ Longitude=1511992867 Latitude=-338867310 height=55983 hMSL=36799 hAcc=2396 vAcc=3720
+ gpsFix=3
+ Longitude=1511992869 Latitude=-338867360 height=56507 hMSL=37322 hAcc=2429 vAcc=3774
+ gpsFix=3
+ Longitude=1511992868 Latitude=-338867386 height=57012 hMSL=37827 hAcc=2454 vAcc=3803
+ gpsFix=3
+ Longitude=1511992916 Latitude=-338867429 height=55912 hMSL=36727 hAcc=2452 vAcc=3787
+ gpsFix=3
+ Longitude=1511992888 Latitude=-338867418 height=56768 hMSL=37584 hAcc=2370 vAcc=3623
+ gpsFix=3
+ Longitude=1511992866 Latitude=-338867403 height=57615 hMSL=38430 hAcc=2258 vAcc=3488
+ gpsFix=3
+ Longitude=1511992868 Latitude=-338867392 height=58603 hMSL=39418 hAcc=2204 vAcc=3422
+ gpsFix=3
+ Longitude=1511992869 Latitude=-338867399 height=58939 hMSL=39754 hAcc=2162 vAcc=3361
+ gpsFix=3
+ Longitude=1511992888 Latitude=-338867430 height=59184 hMSL=40000 hAcc=2174 vAcc=3376
+ gpsFix=3
+ Longitude=1511992869 Latitude=-338867442 height=59268 hMSL=40083 hAcc=2183 vAcc=3387
+ gpsFix=3
+ Longitude=1511992921 Latitude=-338867477 height=59411 hMSL=40226 hAcc=2169 vAcc=3348
+ gpsFix=3
+ Longitude=1511992951 Latitude=-338867488 height=60397 hMSL=41212 hAcc=2724 vAcc=4198
+ gpsFix=3
+ Longitude=1511992995 Latitude=-338867486 height=61440 hMSL=42255 hAcc=3005 vAcc=4630
+ gpsFix=3
+ Longitude=1511993013 Latitude=-338867485 height=62662 hMSL=43478 hAcc=3262 vAcc=5040
+ gpsFix=3
+ Longitude=1511992982 Latitude=-338867540 height=63136 hMSL=43952 hAcc=3255 vAcc=5024
+ gpsFix=3
+ Longitude=1511993127 Latitude=-338867554 height=65963 hMSL=46778 hAcc=4199 vAcc=6380
+ gpsFix=3
+ Longitude=1511993190 Latitude=-338867587 height=65804 hMSL=46619 hAcc=3774 vAcc=5616
+ gpsFix=3
+ Longitude=1511993163 Latitude=-338867606 height=65848 hMSL=46664 hAcc=3714 vAcc=5251
+ gpsFix=3
+ Longitude=1511993254 Latitude=-338867589 height=64575 hMSL=45390 hAcc=3658 vAcc=4837
+ gpsFix=3
+ Longitude=1511993496 Latitude=-338867629 height=63146 hMSL=43962 hAcc=4120 vAcc=5362
+ gpsFix=3
+ Longitude=1511993487 Latitude=-338867684 height=63373 hMSL=44188 hAcc=3781 vAcc=4831
+ gpsFix=3
+ Longitude=1511993464 Latitude=-338867700 height=63666 hMSL=44481 hAcc=3463 vAcc=4392
+ gpsFix=3
+ Longitude=1511993417 Latitude=-338867703 height=63530 hMSL=44345 hAcc=3302 vAcc=4171
+ gpsFix=3
+ Longitude=1511993414 Latitude=-338867730 height=64625 hMSL=45440 hAcc=3040 vAcc=3833
+ gpsFix=3
+ Longitude=1511993594 Latitude=-338867765 height=65249 hMSL=46065 hAcc=4223 vAcc=5296
+ gpsFix=3
+ Longitude=1511993623 Latitude=-338867804 height=65493 hMSL=46308 hAcc=4021 vAcc=5063
+ gpsFix=3
+ Longitude=1511993620 Latitude=-338867808 height=65163 hMSL=45978 hAcc=3776 vAcc=4788
+ gpsFix=3
+ Longitude=1511993714 Latitude=-338867854 height=66750 hMSL=47566 hAcc=4669 vAcc=5971
+ gpsFix=3
+ Longitude=1511993731 Latitude=-338867899 height=66233 hMSL=47048 hAcc=4361 vAcc=5625
+ gpsFix=3
+ Longitude=1511993703 Latitude=-338867934 height=66586 hMSL=47401 hAcc=4090 vAcc=5250
+ gpsFix=3
+ Longitude=1511993759 Latitude=-338868094 height=67146 hMSL=47961 hAcc=5196 vAcc=6716
+ gpsFix=3
+ Longitude=1511993695 Latitude=-338868241 height=67993 hMSL=48808 hAcc=5656 vAcc=7290
+ gpsFix=3
+ Longitude=1511993665 Latitude=-338868248 height=68154 hMSL=48970 hAcc=5189 vAcc=6723
+ gpsFix=3
+ Longitude=1511993633 Latitude=-338868284 height=68295 hMSL=49110 hAcc=4887 vAcc=6379
+ gpsFix=3
+ Longitude=1511993707 Latitude=-338868359 height=70383 hMSL=51198 hAcc=4889 vAcc=6373
+ gpsFix=3
+ Longitude=1511993983 Latitude=-338868464 height=70120 hMSL=50935 hAcc=6310 vAcc=8266
+ gpsFix=3
+ Longitude=1511994185 Latitude=-338868695 height=70027 hMSL=50843 hAcc=7798 vAcc=10177
+ gpsFix=3
+ Longitude=1511994456 Latitude=-338868900 height=68373 hMSL=49189 hAcc=8903 vAcc=11633
+ gpsFix=3
+ Longitude=1511994550 Latitude=-338868969 height=68581 hMSL=49396 hAcc=8528 vAcc=11114
+ gpsFix=3
+ Longitude=1511994530 Latitude=-338869111 height=70846 hMSL=51661 hAcc=9237 vAcc=11938
+ gpsFix=3
+ Longitude=1511994486 Latitude=-338869159 height=73633 hMSL=54449 hAcc=9655 vAcc=12289
+ gpsFix=3
+ Longitude=1511994579 Latitude=-338869216 height=75690 hMSL=56505 hAcc=10464 vAcc=13296
+ gpsFix=3
+ Longitude=1511994804 Latitude=-338869217 height=81705 hMSL=62521 hAcc=12240 vAcc=15436
+ gpsFix=3
+ Longitude=1511995042 Latitude=-338869109 height=86770 hMSL=67586 hAcc=13276 vAcc=16650
+ gpsFix=3
+ Longitude=1511995307 Latitude=-338868969 height=91413 hMSL=72229 hAcc=14635 vAcc=18184
+ gpsFix=3
+ Longitude=1511995630 Latitude=-338868921 height=97362 hMSL=78178 hAcc=15845 vAcc=19468
+ gpsFix=3
+ Longitude=1511995855 Latitude=-338868889 height=100924 hMSL=81740 hAcc=16487 vAcc=19785
+ gpsFix=3
+ Longitude=1511995924 Latitude=-338868810 height=104162 hMSL=84977 hAcc=16598 vAcc=19375
+ gpsFix=3
+ Longitude=1511996292 Latitude=-338868680 height=104977 hMSL=85792 hAcc=17254 vAcc=20144
+ gpsFix=3
+ Longitude=1511996606 Latitude=-338868370 height=106153 hMSL=86968 hAcc=17532 vAcc=20371
+ gpsFix=3
+ Longitude=1511996865 Latitude=-338868227 height=106585 hMSL=87401 hAcc=17607 vAcc=20472
+ gpsFix=3
+ Longitude=1511996978 Latitude=-338868167 height=108961 hMSL=89776 hAcc=17026 vAcc=19573
+ gpsFix=3
+ Longitude=1511997028 Latitude=-338868089 height=114119 hMSL=94935 hAcc=17681 vAcc=19938
+ gpsFix=3
+ Longitude=1511997153 Latitude=-338868035 height=118815 hMSL=99630 hAcc=18450 vAcc=20194
+ gpsFix=3
+ Longitude=1511997200 Latitude=-338868019 height=122168 hMSL=102984 hAcc=17951 vAcc=19779
+ gpsFix=3
+ Longitude=1511997252 Latitude=-338867987 height=124201 hMSL=105016 hAcc=17926 vAcc=19670
+ gpsFix=3
+ Longitude=1511997143 Latitude=-338867991 height=125622 hMSL=106438 hAcc=16969 vAcc=18664
+ gpsFix=3
+ Longitude=1511997165 Latitude=-338867969 height=126481 hMSL=107296 hAcc=16210 vAcc=17754
+ gpsFix=3
+ Longitude=1511997264 Latitude=-338868066 height=127904 hMSL=108719 hAcc=16347 vAcc=17795
+ gpsFix=3
+ Longitude=1511997190 Latitude=-338867975 height=128490 hMSL=109305 hAcc=15469 vAcc=16847
+ gpsFix=3
+ Longitude=1511997187 Latitude=-338867874 height=128918 hMSL=109734 hAcc=14846 vAcc=16185
+ gpsFix=3
+ Longitude=1511997304 Latitude=-338867815 height=129959 hMSL=110775 hAcc=14406 vAcc=15781
+ gpsFix=3
+ Longitude=1511997393 Latitude=-338867723 height=131577 hMSL=112392 hAcc=14211 vAcc=15578
+ gpsFix=3
+ Longitude=1511997456 Latitude=-338867633 height=134400 hMSL=115215 hAcc=14190 vAcc=15626
+ gpsFix=3
+ Longitude=1511997446 Latitude=-338867504 height=135990 hMSL=116805 hAcc=13954 vAcc=15414
+ gpsFix=3
+ Longitude=1511997293 Latitude=-338867289 height=137253 hMSL=118068 hAcc=14155 vAcc=15779
+ gpsFix=3
+ Longitude=1511997186 Latitude=-338867222 height=134727 hMSL=115542 hAcc=14088 vAcc=15931
+ gpsFix=3
+ Longitude=1511997004 Latitude=-338867006 height=133981 hMSL=114796 hAcc=13570 vAcc=15531
+ gpsFix=3
+ Longitude=1511997044 Latitude=-338866947 height=131717 hMSL=112532 hAcc=13301 vAcc=15271
+ gpsFix=3
+ Longitude=1511997381 Latitude=-338866865 height=127903 hMSL=108718 hAcc=13382 vAcc=15396
+ gpsFix=3
+ Longitude=1511997589 Latitude=-338866643 height=125749 hMSL=106564 hAcc=13427 vAcc=15447
+ gpsFix=3
+ Longitude=1511997724 Latitude=-338866432 height=122705 hMSL=103519 hAcc=13280 vAcc=15402
+ gpsFix=3
+ Longitude=1511997656 Latitude=-338866354 height=122381 hMSL=103196 hAcc=12354 vAcc=14359
+ gpsFix=3
+ Longitude=1511997644 Latitude=-338866202 height=122343 hMSL=103158 hAcc=11785 vAcc=13609
+ gpsFix=3
+ Longitude=1511997577 Latitude=-338866034 height=121521 hMSL=102336 hAcc=11219 vAcc=12898
+ gpsFix=3
+ Longitude=1511997481 Latitude=-338865919 height=121876 hMSL=102691 hAcc=10856 vAcc=12339
+ gpsFix=3
+ Longitude=1511997499 Latitude=-338865698 height=122022 hMSL=102836 hAcc=10520 vAcc=11797
+ gpsFix=3
+ Longitude=1511997510 Latitude=-338865636 height=120900 hMSL=101715 hAcc=10345 vAcc=11494
+ gpsFix=3
+ Longitude=1511997274 Latitude=-338865552 height=121285 hMSL=102099 hAcc=10302 vAcc=11483
+ gpsFix=3
+ Longitude=1511997240 Latitude=-338865419 height=120128 hMSL=100942 hAcc=9872 vAcc=11008
+ gpsFix=3
+ Longitude=1511997077 Latitude=-338865476 height=120003 hMSL=100818 hAcc=9837 vAcc=11104
+ gpsFix=3
+ Longitude=1511997120 Latitude=-338865615 height=120533 hMSL=101348 hAcc=9503 vAcc=10780
+ gpsFix=3
+ Longitude=1511997103 Latitude=-338865545 height=120035 hMSL=100849 hAcc=9593 vAcc=10818
+ gpsFix=3
+ Longitude=1511997052 Latitude=-338865474 height=120386 hMSL=101201 hAcc=9288 vAcc=10499
+ gpsFix=3
+ Longitude=1511996857 Latitude=-338864990 height=118043 hMSL=98857 hAcc=9888 vAcc=11256
+ gpsFix=3
+ Longitude=1511996917 Latitude=-338864844 height=114491 hMSL=95305 hAcc=10269 vAcc=11616
+ gpsFix=3
+ Longitude=1511996960 Latitude=-338864569 height=111080 hMSL=91895 hAcc=10683 vAcc=12069
+ gpsFix=3
+ Longitude=1511997073 Latitude=-338864444 height=107371 hMSL=88185 hAcc=10350 vAcc=11644
+ gpsFix=3
+ Longitude=1511997175 Latitude=-338864314 height=103561 hMSL=84375 hAcc=10172 vAcc=11346
+ gpsFix=3
+ Longitude=1511997262 Latitude=-338864216 height=100958 hMSL=81772 hAcc=9820 vAcc=10878
+ gpsFix=3
+ Longitude=1511997427 Latitude=-338864000 height=99615 hMSL=80429 hAcc=9569 vAcc=10620
+ gpsFix=3
+ Longitude=1511997398 Latitude=-338863657 height=101411 hMSL=82225 hAcc=9326 vAcc=10298
+ gpsFix=3
+ Longitude=1511997427 Latitude=-338863508 height=103368 hMSL=84182 hAcc=8913 vAcc=9732
+ gpsFix=3
+ Longitude=1511997486 Latitude=-338863335 height=104360 hMSL=85174 hAcc=8825 vAcc=9535
+ gpsFix=3
+ Longitude=1511997519 Latitude=-338863303 height=105832 hMSL=86646 hAcc=8315 vAcc=9015
+ gpsFix=3
+ Longitude=1511997422 Latitude=-338863257 height=106666 hMSL=87479 hAcc=8386 vAcc=9088
+ gpsFix=3
+ Longitude=1511997413 Latitude=-338863205 height=108085 hMSL=88898 hAcc=8050 vAcc=8678
+ gpsFix=3
+ Longitude=1511997470 Latitude=-338863194 height=109950 hMSL=90764 hAcc=7953 vAcc=8424
+ gpsFix=3
+ Longitude=1511997426 Latitude=-338863189 height=109535 hMSL=90348 hAcc=7799 vAcc=8310
+ gpsFix=3
+ Longitude=1511997331 Latitude=-338863001 height=109330 hMSL=90143 hAcc=8027 vAcc=8520
+ gpsFix=3
+ Longitude=1511997205 Latitude=-338863068 height=111270 hMSL=92083 hAcc=8068 vAcc=8540
+ gpsFix=3
+ Longitude=1511997011 Latitude=-338863191 height=109861 hMSL=90674 hAcc=7928 vAcc=8527
+ gpsFix=3
+ Longitude=1511996762 Latitude=-338863521 height=108884 hMSL=89698 hAcc=8253 vAcc=8972
+ gpsFix=3
+ Longitude=1511996499 Latitude=-338863788 height=109315 hMSL=90129 hAcc=8038 vAcc=8842
+ gpsFix=3
+ Longitude=1511996352 Latitude=-338863820 height=109581 hMSL=90395 hAcc=7560 vAcc=8476
+ gpsFix=3
+ Longitude=1511996289 Latitude=-338863787 height=109754 hMSL=90568 hAcc=7152 vAcc=8032
+ gpsFix=3
+ Longitude=1511996116 Latitude=-338863905 height=111017 hMSL=91831 hAcc=6750 vAcc=7642
+ gpsFix=3
+ Longitude=1511995945 Latitude=-338863991 height=111201 hMSL=92015 hAcc=6195 vAcc=7055
+ gpsFix=3
+ Longitude=1511995701 Latitude=-338864129 height=111610 hMSL=92424 hAcc=5823 vAcc=6709
+ gpsFix=3
+ Longitude=1511995521 Latitude=-338864210 height=112173 hMSL=92987 hAcc=5675 vAcc=6563
+ gpsFix=3
+ Longitude=1511995331 Latitude=-338864353 height=112314 hMSL=93128 hAcc=5539 vAcc=6467
+ gpsFix=3
+ Longitude=1511995100 Latitude=-338864478 height=112606 hMSL=93420 hAcc=5548 vAcc=6524
+ gpsFix=3
+ Longitude=1511994881 Latitude=-338864518 height=112178 hMSL=92993 hAcc=5598 vAcc=6591
+ gpsFix=3
+ Longitude=1511994678 Latitude=-338864586 height=112868 hMSL=93682 hAcc=5746 vAcc=6659
+ gpsFix=3
+ Longitude=1511994594 Latitude=-338864686 height=112742 hMSL=93556 hAcc=5824 vAcc=6720
+ gpsFix=3
+ Longitude=1511994464 Latitude=-338864767 height=113619 hMSL=94434 hAcc=5927 vAcc=6786
+ gpsFix=3
+ Longitude=1511994319 Latitude=-338864885 height=114030 hMSL=94844 hAcc=6091 vAcc=6856
+ gpsFix=3
+ Longitude=1511994195 Latitude=-338865000 height=114593 hMSL=95407 hAcc=6273 vAcc=6921
+ gpsFix=3
+ Longitude=1511994071 Latitude=-338864934 height=115178 hMSL=95992 hAcc=6240 vAcc=6997
+ gpsFix=3
+ Longitude=1511994019 Latitude=-338865037 height=115685 hMSL=96499 hAcc=6324 vAcc=7039
+ gpsFix=3
+ Longitude=1511994062 Latitude=-338865270 height=115610 hMSL=96425 hAcc=6884 vAcc=7655
+ gpsFix=3
+ Longitude=1511994032 Latitude=-338865313 height=117291 hMSL=98105 hAcc=7830 vAcc=8757
+ gpsFix=3
+ Longitude=1511993962 Latitude=-338865702 height=118029 hMSL=98844 hAcc=9502 vAcc=10905
+ gpsFix=3
+ Longitude=1511993974 Latitude=-338866151 height=122510 hMSL=103325 hAcc=10183 vAcc=12175
+ gpsFix=3
+ Longitude=1511994047 Latitude=-338866625 height=116957 hMSL=97772 hAcc=12548 vAcc=15288
+ gpsFix=3
+ Longitude=1511994074 Latitude=-338866705 height=117897 hMSL=98712 hAcc=12262 vAcc=15293
+ gpsFix=3
+ Longitude=1511994113 Latitude=-338866989 height=120423 hMSL=101239 hAcc=11354 vAcc=14531
+ gpsFix=3
+ Longitude=1511994132 Latitude=-338867192 height=123544 hMSL=104359 hAcc=10391 vAcc=13627
+ gpsFix=3
+ Longitude=1511994144 Latitude=-338867371 height=124857 hMSL=105673 hAcc=9836 vAcc=13166
+ gpsFix=3
+ Longitude=1511994217 Latitude=-338867406 height=128188 hMSL=109003 hAcc=9030 vAcc=12369
+ gpsFix=3
+ Longitude=1511994320 Latitude=-338867482 height=130299 hMSL=111114 hAcc=8586 vAcc=11936
+ gpsFix=3
+ Longitude=1511994394 Latitude=-338867532 height=131497 hMSL=112312 hAcc=8326 vAcc=11571
+ gpsFix=3
+ Longitude=1511994426 Latitude=-338867563 height=133986 hMSL=114802 hAcc=8356 vAcc=11472
+ gpsFix=3
+ Longitude=1511994352 Latitude=-338867611 height=135920 hMSL=116736 hAcc=8101 vAcc=10973
+ gpsFix=3
+ Longitude=1511994257 Latitude=-338867679 height=137213 hMSL=118029 hAcc=7733 vAcc=10405
+ gpsFix=3
+ Longitude=1511994187 Latitude=-338867875 height=138500 hMSL=119315 hAcc=7812 vAcc=10391
+ gpsFix=3
+ Longitude=1511994026 Latitude=-338868032 height=140232 hMSL=121048 hAcc=7501 vAcc=10028
+ gpsFix=3
+ Longitude=1511993944 Latitude=-338868072 height=141331 hMSL=122146 hAcc=7278 vAcc=9823
+ gpsFix=3
+ Longitude=1511993885 Latitude=-338868137 height=143083 hMSL=123899 hAcc=7145 vAcc=9659
+ gpsFix=3
+ Longitude=1511993821 Latitude=-338868228 height=143707 hMSL=124523 hAcc=7112 vAcc=9449
+ gpsFix=3
+ Longitude=1511993677 Latitude=-338868236 height=143431 hMSL=124246 hAcc=6858 vAcc=9053
+ gpsFix=3
+ Longitude=1511993480 Latitude=-338868303 height=143253 hMSL=124069 hAcc=6672 vAcc=8820
+ gpsFix=3
+ Longitude=1511993211 Latitude=-338868295 height=143968 hMSL=124784 hAcc=6376 vAcc=8516
+ gpsFix=3
+ Longitude=1511993091 Latitude=-338868312 height=144408 hMSL=125223 hAcc=6500 vAcc=8571
+ gpsFix=3
+ Longitude=1511992866 Latitude=-338868266 height=144019 hMSL=124835 hAcc=6287 vAcc=8566
+ gpsFix=3
+ Longitude=1511992749 Latitude=-338868252 height=144680 hMSL=125495 hAcc=6297 vAcc=8680
+ gpsFix=3
+ Longitude=1511992654 Latitude=-338868243 height=145094 hMSL=125909 hAcc=6279 vAcc=8799
+ gpsFix=3
+ Longitude=1511992272 Latitude=-338868165 height=144445 hMSL=125260 hAcc=6194 vAcc=8933
+ gpsFix=3
+ Longitude=1511992059 Latitude=-338868136 height=142796 hMSL=123611 hAcc=6049 vAcc=9036
+ gpsFix=3
+ Longitude=1511991917 Latitude=-338868163 height=141888 hMSL=122704 hAcc=5991 vAcc=9154
+ gpsFix=3
+ Longitude=1511991668 Latitude=-338868094 height=142112 hMSL=122927 hAcc=5845 vAcc=9294
+ gpsFix=3
+ Longitude=1511991653 Latitude=-338868073 height=140568 hMSL=121384 hAcc=5631 vAcc=9273
+ gpsFix=3
+ Longitude=1511991576 Latitude=-338868029 height=139213 hMSL=120029 hAcc=5495 vAcc=9314
+ gpsFix=3
+ Longitude=1511991346 Latitude=-338867977 height=138685 hMSL=119501 hAcc=5299 vAcc=9343
+ gpsFix=3
+ Longitude=1511991281 Latitude=-338867958 height=136796 hMSL=117611 hAcc=5060 vAcc=9269
+ gpsFix=3
+ Longitude=1511991289 Latitude=-338867918 height=135175 hMSL=115991 hAcc=4925 vAcc=9270
+ gpsFix=3
+ Longitude=1511991304 Latitude=-338867888 height=134052 hMSL=114868 hAcc=4768 vAcc=9199
+ gpsFix=3
+ Longitude=1511991280 Latitude=-338867859 height=130680 hMSL=111496 hAcc=4560 vAcc=8984
+ gpsFix=3
+ Longitude=1511991204 Latitude=-338867820 height=129762 hMSL=110577 hAcc=4399 vAcc=8900
+ gpsFix=3
+ Longitude=1511991207 Latitude=-338867812 height=128143 hMSL=108959 hAcc=4349 vAcc=8938
+ gpsFix=3
+ Longitude=1511991222 Latitude=-338867811 height=126004 hMSL=106819 hAcc=4314 vAcc=8983
+ gpsFix=3
+ Longitude=1511991234 Latitude=-338867753 height=124296 hMSL=105112 hAcc=4128 vAcc=8733
+ gpsFix=3
+ Longitude=1511991248 Latitude=-338867735 height=122586 hMSL=103401 hAcc=4019 vAcc=8644
+ gpsFix=3
+ Longitude=1511991254 Latitude=-338867730 height=120508 hMSL=101324 hAcc=3889 vAcc=8459
+ gpsFix=3
+ Longitude=1511991302 Latitude=-338867718 height=117838 hMSL=98653 hAcc=3742 vAcc=8216
+ gpsFix=3
+ Longitude=1511991375 Latitude=-338867720 height=113629 hMSL=94444 hAcc=3602 vAcc=7818
+ gpsFix=3
+ Longitude=1511991451 Latitude=-338867668 height=110988 hMSL=91804 hAcc=3498 vAcc=7566
+ gpsFix=3
+ Longitude=1511991493 Latitude=-338867626 height=108865 hMSL=89681 hAcc=3454 vAcc=7486
+ gpsFix=3
+ Longitude=1511991531 Latitude=-338867597 height=106831 hMSL=87646 hAcc=3402 vAcc=7299
+ gpsFix=3
+ Longitude=1511991586 Latitude=-338867591 height=103580 hMSL=84396 hAcc=3314 vAcc=6797
+ gpsFix=3
+ Longitude=1511991706 Latitude=-338867571 height=100168 hMSL=80984 hAcc=3210 vAcc=6457
+ gpsFix=3
+ Longitude=1511991756 Latitude=-338867552 height=98632 hMSL=79448 hAcc=3116 vAcc=6135
+ gpsFix=3
+ Longitude=1511991813 Latitude=-338867559 height=96795 hMSL=77610 hAcc=3037 vAcc=5958
+ gpsFix=3
+ Longitude=1511991877 Latitude=-338867544 height=95271 hMSL=76087 hAcc=2961 vAcc=5799
+ gpsFix=3
+ Longitude=1511991902 Latitude=-338867535 height=94490 hMSL=75306 hAcc=2938 vAcc=5767
+ gpsFix=3
+ Longitude=1511991936 Latitude=-338867528 height=92829 hMSL=73644 hAcc=2899 vAcc=5595
+ gpsFix=3
+ Longitude=1511991987 Latitude=-338867522 height=91241 hMSL=72056 hAcc=2843 vAcc=5427
+ gpsFix=3
+ Longitude=1511992038 Latitude=-338867517 height=89887 hMSL=70702 hAcc=2808 vAcc=5291
+ gpsFix=3
+ Longitude=1511992084 Latitude=-338867516 height=87616 hMSL=68431 hAcc=2773 vAcc=5156
+ gpsFix=3
+ Longitude=1511992130 Latitude=-338867506 height=86738 hMSL=67554 hAcc=2721 vAcc=5029
+ gpsFix=3
+ Longitude=1511992160 Latitude=-338867498 height=85467 hMSL=66282 hAcc=2667 vAcc=4941
+ gpsFix=3
+ Longitude=1511992209 Latitude=-338867482 height=84426 hMSL=65241 hAcc=2626 vAcc=4866
+ gpsFix=3
+ Longitude=1511992243 Latitude=-338867487 height=82963 hMSL=63778 hAcc=2596 vAcc=4788
+ gpsFix=3
+ Longitude=1511992238 Latitude=-338867480 height=82913 hMSL=63728 hAcc=2588 vAcc=4787
+ gpsFix=3
+ Longitude=1511992214 Latitude=-338867468 height=83099 hMSL=63914 hAcc=2585 vAcc=4792
+ gpsFix=3
+ Longitude=1511992194 Latitude=-338867476 height=83087 hMSL=63902 hAcc=2602 vAcc=4799
+ gpsFix=3
+ Longitude=1511992206 Latitude=-338867482 height=82956 hMSL=63772 hAcc=2584 vAcc=4785
+ gpsFix=3
+ Longitude=1511992220 Latitude=-338867477 height=82791 hMSL=63607 hAcc=2586 vAcc=4792
+ gpsFix=3
+ Longitude=1511992251 Latitude=-338867470 height=82157 hMSL=62973 hAcc=2567 vAcc=4750
+ gpsFix=3
+ Longitude=1511992276 Latitude=-338867467 height=81031 hMSL=61846 hAcc=2540 vAcc=4657
+ gpsFix=3
+ Longitude=1511992304 Latitude=-338867455 height=79863 hMSL=60679 hAcc=2509 vAcc=4566
+ gpsFix=3
+ Longitude=1511992330 Latitude=-338867435 height=78873 hMSL=59688 hAcc=2474 vAcc=4478
+ gpsFix=3
+ Longitude=1511992353 Latitude=-338867414 height=78382 hMSL=59197 hAcc=2459 vAcc=4449
+ gpsFix=3
+ Longitude=1511992367 Latitude=-338867404 height=77765 hMSL=58580 hAcc=2474 vAcc=4435
+ gpsFix=3
+ Longitude=1511992369 Latitude=-338867395 height=77832 hMSL=58647 hAcc=2488 vAcc=4450
+ gpsFix=3
+ Longitude=1511992379 Latitude=-338867392 height=77826 hMSL=58641 hAcc=2518 vAcc=4468
+ gpsFix=3
+ Longitude=1511992368 Latitude=-338867401 height=78133 hMSL=58949 hAcc=2541 vAcc=4489
+ gpsFix=3
+ Longitude=1511992380 Latitude=-338867388 height=78041 hMSL=58856 hAcc=2547 vAcc=4507
+ gpsFix=3
+ Longitude=1511992392 Latitude=-338867371 height=77902 hMSL=58717 hAcc=2574 vAcc=4533
+ gpsFix=3
+ Longitude=1511992406 Latitude=-338867372 height=77999 hMSL=58815 hAcc=2603 vAcc=4572
+ gpsFix=3
+ Longitude=1511992357 Latitude=-338867399 height=78627 hMSL=59443 hAcc=2610 vAcc=4592
+ gpsFix=3
+ Longitude=1511992344 Latitude=-338867400 height=78691 hMSL=59507 hAcc=2602 vAcc=4605
+ gpsFix=3
+ Longitude=1511992362 Latitude=-338867406 height=78736 hMSL=59551 hAcc=2613 vAcc=4647
+ gpsFix=3
+ Longitude=1511992363 Latitude=-338867421 height=78479 hMSL=59294 hAcc=2619 vAcc=4674
+ gpsFix=3
+ Longitude=1511992381 Latitude=-338867415 height=77782 hMSL=58597 hAcc=2611 vAcc=4677
+ gpsFix=3
+ Longitude=1511992390 Latitude=-338867412 height=77673 hMSL=58488 hAcc=2643 vAcc=4735
+ gpsFix=3
+ Longitude=1511992406 Latitude=-338867410 height=77462 hMSL=58277 hAcc=2690 vAcc=4786
+ gpsFix=3
+ Longitude=1511992410 Latitude=-338867425 height=77202 hMSL=58017 hAcc=2712 vAcc=4775
+ gpsFix=3
+ Longitude=1511992422 Latitude=-338867440 height=76640 hMSL=57455 hAcc=2703 vAcc=4716
+ gpsFix=3
+ Longitude=1511992432 Latitude=-338867450 height=76139 hMSL=56955 hAcc=2685 vAcc=4658
+ gpsFix=3
+ Longitude=1511992447 Latitude=-338867445 height=75179 hMSL=55994 hAcc=2662 vAcc=4570
+ gpsFix=3
+ Longitude=1511992479 Latitude=-338867435 height=74092 hMSL=54908 hAcc=2634 vAcc=4461
+ gpsFix=3
+ Longitude=1511992508 Latitude=-338867425 height=72967 hMSL=53782 hAcc=2603 vAcc=4370

@@ -120,6 +120,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/pi/catkin_ws/build/echobot/cmake_install.cmake")
   include("/home/pi/catkin_ws/build/lowLevelHardware/cmake_install.cmake")
   include("/home/pi/catkin_ws/build/remote_control/cmake_install.cmake")
+  include("/home/pi/catkin_ws/build/telemetry/cmake_install.cmake")
 
 endif()
 

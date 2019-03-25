@@ -10,18 +10,21 @@ IMUTOPIC=rospy.get_param("~imuTopic","imu")
 brIMU=tf2_ros.TransformBroadcaster()
 brGPS=tf2_ros.TransformBroadcaster()
 
-GPS0=False
+GPS0=Vector3(0,0,0)
+first=False
 GPS=Vector3(0,0,0)
 # subscribe to GPS data, IMU data
 def gpsCache(data):
     global GPS
     global GPS0
+    global first
     GPS.x=data.latitude
     GPS.y=data.longitude
     GPS.z=data.height
     # record initial GPS location
-    if GPS0==False:
+    if first==False:
         GPS0=GPS
+        first=True
 rospy.Subscriber(GPSTOPIC,NavSatFix,gpsCache)
 IMU=Vector3(0,0,0)
 def imuCache(data):
@@ -34,7 +37,7 @@ rospy.Subscriber(IMUTOPIC,Imu,imuCache)
 
 while not rospy.is_shutdown():
     # calculate and set tf transform of self based on gps
-    if not GPS0==False:
+    if first==True:
         deltaGPS=GPS0-GPS
         gpsT=TransformStamped()
         gpsT.header.stamp=rospy.Time.now()

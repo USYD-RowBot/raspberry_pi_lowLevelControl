@@ -80,8 +80,8 @@ def parse_channel_data(data):
 rospy.init_node('remote_control', anonymous=True)
 
 PORT_NAME=rospy.get_param("~port",'/dev/ttyUSB0')
-CHANNEL_DEFAULT_MAX=[1414,1585,1414,1,1,1]
-CHANNEL_DEFAULT_MIN=[1073,1926,1073,0,0,0]
+CHANNEL_DEFAULT_MAX=[1840,1840,1840,1840,1,1]
+CHANNEL_DEFAULT_MIN=[1159,1159,1159,1159,0,0]
 # get parameters for channels and remapping from ROS
 TOPIC_OUT=[rospy.get_param("~topic_out{0}".format(i),"remote_out_{0}".format(i)) for i in range(6)]
 ENABLED=[rospy.has_param("~topic_out{0}".format(i)) for i in range(6)]

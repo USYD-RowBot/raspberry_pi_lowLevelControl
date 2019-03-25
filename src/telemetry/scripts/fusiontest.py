@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import rospy
 import tf2_ros
-import tf_conversions
 from sensor_msgs.msg import NavSatFix,Imu
 from geometry_msgs.msg import TransformStamped,Vector3
 rospy.init_node("fusiontest",anonymous=True)
@@ -41,7 +40,10 @@ while not rospy.is_shutdown():
         gpsT.header.frame_id="world"
         gpsT.child_frame_id="gps"
         gpsT.transform.translation=deltaGPS
-        gpsT.transform.rotation= tf_conversions.transformations.quaternion_from_euler(0, 0, 0)
+        gpsT.transform.rotation.w=1
+        gpsT.transform.rotation.x=0
+        gpsT.transform.rotation.y=0
+        gpsT.transform.rotation.z=0
         br.sendTransform(gpsT)
     #for imu
     imuT=TransformStamped()
@@ -49,7 +51,10 @@ while not rospy.is_shutdown():
     imuT.header.frame_id="world"
     imuT.child_frame_id="imu"
     imuT.transform.translation=IMU
-    imuT.transform.rotation= tf_conversions.transformations.quaternion_from_euler(0, 0, 0)
+    imuT.transform.rotation.w=1
+    imuT.transform.rotation.x=0
+    imuT.transform.rotation.y=0
+    imuT.transform.rotation.z=0
     br.sendTransform(imuT)
     # publish the tf frames
 

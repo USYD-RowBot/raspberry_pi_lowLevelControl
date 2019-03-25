@@ -40,6 +40,7 @@ while not rospy.is_shutdown():
         gpsT.header.frame_id="world"
         gpsT.child_frame_id="gps"
         gpsT.transform.translation=deltaGPS
+        gpsT.transform.rotation= tf_conversions.transformations.quaternion_from_euler(0, 0, 0)
         br.sendTransform(gpsT)
     #for imu
     imuT=TransformStamped()
@@ -47,6 +48,7 @@ while not rospy.is_shutdown():
     imuT.header.frame_id="world"
     imuT.child_frame_id="imu"
     imuT.transform.translation=IMU
+    imuT.transform.rotation= tf_conversions.transformations.quaternion_from_euler(0, 0, 0)
     br.sendTransform(imuT)
     # publish the tf frames
 

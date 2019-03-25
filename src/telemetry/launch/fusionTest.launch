@@ -1,0 +1,6 @@
+<launch>
+	<node name="imu" pkg="telemetry" type="IMU.py">
+	</node>
+	<node name="fusiontest" pkg="telemetry" type="fusiontest.py">
+	</node>
+</launch>

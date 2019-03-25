@@ -34,7 +34,7 @@ rospy.Subscriber(IMUTOPIC,Imu,imuCache)
 
 while not rospy.is_shutdown():
     # calculate and set tf transform of self based on gps
-    if (GPS0):
+    if not GPS0==False:
         deltaGPS=GPS0-GPS
         gpsT=TransformStamped()
         gpsT.header.stamp=rospy.Time.now()

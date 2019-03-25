@@ -7,7 +7,8 @@ rospy.init_node("fusiontest",anonymous=True)
 GPSTOPIC=rospy.get_param("~gpsTopic","gps")
 IMUTOPIC=rospy.get_param("~imuTopic","imu")
 
-br=tf2_ros.TransformBroadcaster()
+brIMU=tf2_ros.TransformBroadcaster()
+brGPS=tf2_ros.TransformBroadcaster()
 
 GPS0=False
 GPS=Vector3(0,0,0)
@@ -44,7 +45,7 @@ while not rospy.is_shutdown():
         gpsT.transform.rotation.x=0
         gpsT.transform.rotation.y=0
         gpsT.transform.rotation.z=0
-        br.sendTransform(gpsT)
+        brGPS.sendTransform(gpsT)
     #for imu
     imuT=TransformStamped()
     imuT.header.stamp=rospy.Time.now()
@@ -55,6 +56,6 @@ while not rospy.is_shutdown():
     imuT.transform.rotation.x=0
     imuT.transform.rotation.y=0
     imuT.transform.rotation.z=0
-    br.sendTransform(imuT)
+    brIMU.sendTransform(imuT)
     # publish the tf frames
 

@@ -52,7 +52,7 @@ while not rospy.is_shutdown():
     if msg.name() == "NAV_POSLLH":
         outstr = str(msg).split(",")[1:]
         outstr = "".join(outstr)
-        components=search(" Longitude={:d} Latitude={:d} Height={:d}",oustr)
+        components=search(" Longitude={:d} Latitude={:d} Height={:d}",outstr)
         navmsg = NavSatFix()
         navmsg.latitude=float(components[1])/10000000.0
         navmsg.longitude=float(components[0])/10000000.0

@@ -1,0 +1,15 @@
+<launch>
+    <node name="imu" pkg="telemetry" type="IMU.py">
+    </node>
+    <node name="compass" pkg="telemetry" type="Compass.py">
+    </node>
+    <node name="arrow" pkg="lowLevelHardware" type="servoFromTopic.py">
+    <param name="srv_num" value="3"/>
+    <param name="val_max" value="3.1415"/>
+    <param name="val_min" value="-3.1415"/>
+    <param name="time_max" value="1.00"/>
+    <param name="time_max" value="-1.00"/>
+    <param name="topic" value="compass"/>
+  </node>
+
+</launch>

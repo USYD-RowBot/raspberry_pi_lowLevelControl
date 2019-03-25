@@ -3,6 +3,7 @@ import rospy
 import math
 from sensor_msgs.msg import MagneticField
 from std_msgs.msg import Float32
+from std_msgs.msg import Header
 rospy.init_node("compass",anonymous=True)
 MAG_IN_TOPIC=rospy.get_param("magTopic","mag")
 COMPASS_TOPIC=rospy.get_param("compassTopic","compass")

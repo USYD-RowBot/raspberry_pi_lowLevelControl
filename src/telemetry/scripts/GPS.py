@@ -5,6 +5,8 @@ import rospy
 import navio.util
 import navio.ublox
 
+from std_msgs.msg import Header
+
 # Initialise ros
 rospy.init_node('gps',anonymous=True)
 OUTPUT_TOPIC = rospy.get_param("~topic",'GPS')
@@ -53,7 +55,10 @@ while not rospy.is_shutdown():
         outstr = str(msg).split(",")[1:]
         outstr = "".join(outstr)
         components=search(" Longitude={:d} Latitude={:d} Height={:d}",outstr)
+        h=Header()
+        h.stamp=rospy.Time.now()
         navmsg = NavSatFix()
+        navmsg.header=h
         navmsg.latitude=float(components[1])/10000000.0
         navmsg.longitude=float(components[0])/10000000.0
         navmsg.altitude=float(components[2])/10000000.0

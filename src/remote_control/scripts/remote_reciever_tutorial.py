@@ -89,7 +89,7 @@ try:
             ch_id, s_pos = parse_channel_data(data[2*i:2*i+2])
             servo_position[ch_id] = s_pos
         servo_position[8]=time.time()
-	print servo_position
+	#print servo_position
         sys.stdout.write(
             "    %4d     %4d     %4d     %4d     %4d     %4d   %4d    %4d\r"%tuple(
             servo_position[:8]))

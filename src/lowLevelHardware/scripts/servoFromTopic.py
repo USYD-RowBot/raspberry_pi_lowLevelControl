@@ -38,6 +38,7 @@ with navio.pwm.PWM(PWM_OUTPUT) as pwm:
         #priming done!
     
     def callback(data):
+        print ("servo incoming data:{0}".format(data))
         scaled=data.data;
         # clip the range
         if (scaled>PWM_MAX):
@@ -46,6 +47,7 @@ with navio.pwm.PWM(PWM_OUTPUT) as pwm:
             scaled=PWM_MIN
         # get the corresponding value
         scaled=(1.0*scaled-1.0*PWM_MIN)/(1.0*PWM_MAX-1.0*PWM_MIN)*(TIME_MAX-TIME_MIN)+TIME_MIN;
+        print ("scaled output:{0}".format(scaled))
         pwm.set_duty_cycle(scaled)
         # set the servo power
     rospy.Subscriber(topic,Float32,callback)

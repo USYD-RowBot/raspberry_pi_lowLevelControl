@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import rospy
 import math
 from sensor_msgs.msg import MagneticField
@@ -7,9 +8,10 @@ MAG_IN_TOPIC=rospy.get_param("magTopic","mag")
 COMPASS_TOPIC=rospy.get_param("compassTopic","compass")
 pub=rospy.Publisher(COMPASS_TOPIC,Float32)
 def cb(data):
-    Xfield=data.data.magnetic_field.x
-    Yfield=data.data.magnetic_field.y
+    Xfield=data.magnetic_field.x
+    Yfield=data.magnetic_field.y
     bearing=math.atan2(Yfield,Xfield)
+    print (bearing)
     pub.publish(bearing)
 
 sub=rospy.Subscriber(MAG_IN_TOPIC,MagneticField,cb)

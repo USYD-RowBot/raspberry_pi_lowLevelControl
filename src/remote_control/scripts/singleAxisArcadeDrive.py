@@ -57,7 +57,7 @@ def Ycallback(data):
 rospy.Subscriber(XAxisTopic,Float32,Xcallback)
 rospy.Subscriber(YAxisTopic,Float32,Ycallback)
 # left and right publishers
-pub=[rospy.Publisher(leftMotorChannel, Float32, queue_size=10),rospy.Publisher(rightMotorChannel, Int32, queue_size=10)]
+pub=[rospy.Publisher(leftMotorChannel, Float32, queue_size=10),rospy.Publisher(rightMotorChannel, Float32, queue_size=10)]
 print("Mapping {0},{1} ==> {2},{3}".format(XAxisTopic,YAxisTopic,leftMotorChannel,rightMotorChannel))
 while not rospy.is_shutdown():
     #convert into radial coords

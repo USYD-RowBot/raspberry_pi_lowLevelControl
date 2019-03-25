@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 MS5611 driver code is placed under the BSD license.
 Copyright (c) 2014, Emlid Limited, www.emlid.com

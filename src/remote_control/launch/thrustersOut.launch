@@ -3,10 +3,6 @@
 	<node name="remote_control_handler" pkg="remote_control" type="remote_bridge.py" output="screen">
 		<param name="topic_out0" value="axisY" />
 		<param name="topic_out3" value="axisX" />
-		<param name="channel_max0" value=""/>
-		<param name="channel_min0" value=""/>
-		<param name="channel_max3" value=""/>
-		<param name="channel_min3" value=""/>
 		<param name="channel_out_max0" value="100" />
 		<param name="channel_out_min0" value="-100" />
 		<param name="channel_out_max3" value="100" />

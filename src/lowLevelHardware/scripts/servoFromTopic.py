@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from std_msgs.msg import Int32
+from std_msgs.msg import Float32
 import sys
 import time
 import navio.pwm
@@ -9,8 +9,8 @@ import navio.pwm
 rospy.init_node("servoNode",anonymous=True)
 #navio.util.check_apm()
 PWM_OUTPUT=rospy.get_param("~srv_num",0)
-PWM_MAX=rospy.get_param("~val_max",100)
-PWM_MIN=rospy.get_param("~val_min",0)
+PWM_MAX=rospy.get_param("~val_max",100.0)
+PWM_MIN=rospy.get_param("~val_min",0.0)
 TIME_MAX=rospy.get_param("~time_max",2.00)# in ms
 TIME_MIN=rospy.get_param("~time_min",1.00)
 PRIME_REQUIRED=rospy.get_param("~prime",False)
@@ -48,5 +48,5 @@ with navio.pwm.PWM(PWM_OUTPUT) as pwm:
         scaled=(1.0*scaled-1.0*PWM_MIN)/(1.0*PWM_MAX-1.0*PWM_MIN)*(TIME_MAX-TIME_MIN)+TIME_MIN;
         pwm.set_duty_cycle(scaled)
         # set the servo power
-    rospy.Subscriber(topic,Int32,callback)
+    rospy.Subscriber(topic,Float32,callback)
     rospy.spin()

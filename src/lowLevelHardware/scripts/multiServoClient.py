@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 import rospy
-from std_msgs.msg import Int32,Float32
+from std_msgs.msg import Float32
 import sys
 import time
 
 rospy.init_node("multiServoClient",anonymous=True)
 PWM_OUTPUT=rospy.get_param("~srv_num",0)
-PWM_MAX=rospy.get_param("~val_max",100)
-PWM_MIN=rospy.get_param("~val_min",0)
+PWM_MAX=rospy.get_param("~val_max",100.0)
+PWM_MIN=rospy.get_param("~val_min",0.0)
 TIME_MAX=rospy.get_param("~time_max",2.00)# in ms
 TIME_MIN=rospy.get_param("~time_min",1.00)
 PRIME_REQUIRED=rospy.get_param("~prime",False)
@@ -28,15 +28,15 @@ if (PRIME_REQUIRED):
     
     rate=rospy.Rate(1000)
     for i in range(2000):
-        ((TIME_MAX+TIME_MIN)/2)
+        ((TIME_MAX+TIME_MIN)/2.0)
         rate.sleep()
 
     for i in range(2000):
-        pwmForward((TIME_MAX*1.5+TIME_MIN*0.5)/2)
+        pwmForward((TIME_MAX*1.5+TIME_MIN*0.5)/2.0)
         rate.sleep()
 
     for i in range(2000):
-        pwmForward((TIME_MAX+TIME_MIN)/2)
+        pwmForward((TIME_MAX+TIME_MIN)/2.0)
         rate.sleep()
     #priming done!
 
@@ -51,5 +51,5 @@ def callback(data):
     scaled=(1.0*scaled-1.0*PWM_MIN)/(1.0*PWM_MAX-1.0*PWM_MIN)*(TIME_MAX-TIME_MIN)+TIME_MIN;
     pwmForward(scaled)
     # set the servo power
-rospy.Subscriber(topic,Int32,callback)
+rospy.Subscriber(topic,Float32,callback)
 rospy.spin()

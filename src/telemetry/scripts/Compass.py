@@ -1,0 +1,16 @@
+import rospy
+import math
+from sensor_msgs.msg import MagneticField
+from std_msgs.msg import Float32
+rospy.init_node("compass",anonymous=True)
+MAG_IN_TOPIC=rospy.get_param("magTopic","mag")
+COMPASS_TOPIC=rospy.get_param("compassTopic","compass")
+pub=rospy.Publisher(COMPASS_TOPIC,Float32)
+def cb(data):
+    Xfield=data.data.magnetic_field.x
+    Yfield=data.data.magnetic_field.y
+    bearing=math.atan2(Yfield,Xfield)
+    pub.publish(bearing)
+
+sub=rospy.Subscriber(MAG_IN_TOPIC,MagneticField,cb)
+rospy.spin()

@@ -2,7 +2,7 @@
 from __future__ import print_function
 # so i can use it with my list comprehensions
 import rospy
-from std_msgs.msg import Int32
+from std_msgs.msg import Float32
 import sys
 import time
 import serial
@@ -104,7 +104,7 @@ ser = serial.Serial(
     stopbits=serial.STOPBITS_ONE)
 
 #start ROS
-publishers = [rospy.Publisher(TOPIC_OUT[i], Int32, queue_size=10) if ENABLED[i] else None for i in range(6)]
+publishers = [rospy.Publisher(TOPIC_OUT[i], Float32, queue_size=10) if ENABLED[i] else None for i in range(6)]
 #start the serial
 try:
     align_serial(ser)
@@ -117,7 +117,7 @@ try:
 
         # remap all variables
 
-        mapped_servo_position = [int(CHANNEL_OUT_MIN[i]+(CHANNEL_OUT_MAX[i]-CHANNEL_OUT_MIN[i])*(servo_position[i]-CHANNEL_MIN[i])/(CHANNEL_MAX[i]-CHANNEL_MIN[i])) for i in range(6)];
+        mapped_servo_position = [CHANNEL_OUT_MIN[i]+(CHANNEL_OUT_MAX[i]-CHANNEL_OUT_MIN[i])*(servo_position[i]-CHANNEL_MIN[i])/(CHANNEL_MAX[i]-CHANNEL_MIN[i]) for i in range(6)];
 
         # publish to all channels
         [publishers[i].publish(mapped_servo_position[i]) if ENABLED[i]==True else None for i in range(6)]

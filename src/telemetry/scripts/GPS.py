@@ -47,14 +47,14 @@ ubl.configure_message_rate(navio.ublox.CLASS_NAV, navio.ublox.MSG_NAV_CLOCK, 5)
 
 while not rospy.is_shutdown():
     msg = ubl.receive_message()
-        if msg is None:
-            pass
-        if msg.name() == "NAV_POSLLH":
-            outstr = str(msg).split(",")[1:]
-            outstr = "".join(outstr)
-            components=search(" Longitude={:d} Latitude={:d} Height={:d}",oustr)
-            navmsg = NavSatFix()
-            navmsg.latitude=float(components[1])/10000000.0
-            navmsg.longitude=float(components[0])/10000000.0
-            navmsg.altitude=float(components[2])/10000000.0
-            publisher.publish(navmsg)
+    if msg is None:
+        pass
+    if msg.name() == "NAV_POSLLH":
+        outstr = str(msg).split(",")[1:]
+        outstr = "".join(outstr)
+        components=search(" Longitude={:d} Latitude={:d} Height={:d}",oustr)
+        navmsg = NavSatFix()
+        navmsg.latitude=float(components[1])/10000000.0
+        navmsg.longitude=float(components[0])/10000000.0
+        navmsg.altitude=float(components[2])/10000000.0
+        publisher.publish(navmsg)

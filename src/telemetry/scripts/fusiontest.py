@@ -46,6 +46,7 @@ while not rospy.is_shutdown():
         gpsT.transform.rotation.y=0
         gpsT.transform.rotation.z=0
         brGPS.sendTransform(gpsT)
+        print ("GPS OK")
     #for imu
     imuT=TransformStamped()
     imuT.header.stamp=rospy.Time.now()

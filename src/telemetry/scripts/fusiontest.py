@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 import rospy
 import tf2_ros
-from stg_msgs.msg import Vector3
 from sensor_msgs.msg import NavSatFix,Imu
-from geometry_msgs.msg import TransformStamped
+from geometry_msgs.msg import TransformStamped,Vector3
 rospy.init_node("fusiontest",anonymous=True)
 GPSTOPIC=rospy.get_param("~gpsTopic","gps")
 IMUTOPIC=rospy.get_param("~imuTopic","imu")

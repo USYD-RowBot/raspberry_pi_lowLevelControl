@@ -44,7 +44,7 @@ def align_serial(ser):
     dt = 0
     # wait for the next long delay between reads
     dt_threshold = 0.005 # pick some threshold between 8.69us and 9.89ms
-    while dt < dt_threshold:
+    while dt < dt_threshold and not rospy.is_shutdown():
         start = time.time()
         ser.read()
         dt = time.time()-start

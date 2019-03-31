@@ -34,7 +34,7 @@ def callback1(data):
         factor1 = -(Axis1Center-_1factor)/(Axis1Center-Axis1Min)
     else:
         factor1=0
-    lastTime1=time.time()
+    last1Time=time.time()
     #if (rigourousDebug):print(":1{0}@{1}".format(factor1,lastTime1))
 
 def callback2(data):
@@ -69,7 +69,7 @@ while not rospy.is_shutdown():
     else: outL=centerPower+sqL*(centerPower-minPower)
     if (sqR>0):outR=centerPower+sqR*(maxPower-centerPower)
     else: outR=centerPower+sqR*(centerPower-minPower)
-    if (rigourousDebug):print(":1{0:0.00} :2{1:0.00} r12:{2:0.00} th12:{3:0.00} sqL:{4:0.00} sqR:{5:0.00} outL:{6:0.00} outR:{7:0.00}".format(float(factor1),float(factor2),float(r12),float(th12),float(sqL),float(sqR),float(outL),float(outR)))
+    if (rigourousDebug):print(":1{0:0.00} :2{1:0.00} sqL:{2:0.00} sqR:{3:0.00} outL:{4:0.00} outR:{5:0.00}".format(float(factor1),float(factor2),float(sqL),float(sqR),float(outL),float(outR)))
     if time.time()-last1Time<deadTimeout and time.time()-last2Time<deadTimeout:
         pub[0].publish(outL)
         pub[1].publish(outR)

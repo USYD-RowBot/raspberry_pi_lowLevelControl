@@ -27,7 +27,7 @@ adc=navio.adc.ADC()
 # trueIP=trueIP.split(".")
 while (True):
     # first check if power is above or below minimum
-    while (adc.read(2)<11.8):
+    while (adc.read(2)/100<11.8):
         led.setColor('Red')
         time.sleep(0.1)
         led.setColor('Black')

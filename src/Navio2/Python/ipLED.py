@@ -3,6 +3,7 @@ import sys
 import navio.leds
 import time
 import navio.util
+import navio.adc
 import socket
 
 
@@ -22,11 +23,17 @@ def get_ip():
 navio.util.check_apm()
 
 led = navio.leds.Led()
-
-# fetch our IP address
-trueIP = get_ip()
+adc=navio.adc.ADC()
 # trueIP=trueIP.split(".")
 while (True):
+    # first check if power is above or below minimum
+    while (adc.read(2)<11.8):
+        led.setColor('Red')
+        time.sleep(0.1)
+        led.setColor('Black')
+        time.sleep(0.1)
+    # fetch our IP address
+    trueIP = get_ip()
     for i in trueIP:
         try:
             count = int(i)

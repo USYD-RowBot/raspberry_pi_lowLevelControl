@@ -11,7 +11,7 @@ pub=rospy.Publisher(COMPASS_TOPIC,Float32)
 def cb(data):
     Xfield=data.magnetic_field.x
     Yfield=data.magnetic_field.y
-    bearing=math.atan2(Yfield,Xfield)
+    bearing=math.atan2(Yfield,Xfield)*180.0/3.141
     print (bearing)
     pub.publish(bearing)
 

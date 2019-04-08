@@ -50,11 +50,11 @@ def autoMotorrightCallback(data):
 
 def switchCallback(data):
     global state, manual_state, auto_state,estop_state
-    global prime, primerChannel
+    global prime, primepub
     if data.data>0.9:
         if state != auto_state:
             if prime:
-                primerChannel.publish(True)
+                primepub.publish(True)
         state=auto_state
     elif data.data<-0.9:
         state=estop_state

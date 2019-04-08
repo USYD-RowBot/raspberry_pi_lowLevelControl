@@ -43,8 +43,8 @@ navio.util.check_apm()
 rospy.init_node("imusuite", anonymous=True)
 
 INSTRUMENT = rospy.get_param("instrument", "mpu")  # or lsm
-IMU_CHANNEL = rospy.get_param("imuChannel", "imu")  # or lsm
-MAG_CHANNEL = rospy.get_param("magChannel", "mag")  # or lsm
+IMU_CHANNEL = rospy.get_param("imuChannel", "imu")
+MAG_CHANNEL = rospy.get_param("magChannel", "mag")
 
 if INSTRUMENT == 'mpu':
     print "Selected: MPU9250"

@@ -40,6 +40,10 @@ def align_serial(ser):
     """
     # read in the first byte, might be a long delay in case the transmitter is
     # off when the program begins
+    while ser.inWaiting()==0:
+        if rospy.is_shutdown():
+           return
+        time.sleep(0.01)
     ser.read(1)
     dt = 0
     # wait for the next long delay between reads

@@ -28,14 +28,12 @@ def manualMotorleftCallback(data):
     global state
     global leftpub
     if state==manual_state:
-        print ("rl:{0}".format(data.data))
         leftpub.publish(data.data)
 
 def manualMotorrightCallback(data):
     global state
     global rightpub
     if state==manual_state:
-        print ("rr:{0}".format(data.data))
         rightpub.publish(data.data)
 
 def autoMotorleftCallback(data):
@@ -55,7 +53,9 @@ def switchCallback(data):
     global prime, primepub
     if data.data>0.9:
         if state != auto_state:
+            print("primer toggle")
             if prime:
+                print ("primer set!")
                 primepub.publish(True)
         state=auto_state
     elif data.data<-0.9:

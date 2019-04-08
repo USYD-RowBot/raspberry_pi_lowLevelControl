@@ -60,12 +60,13 @@ def switchCallback(data):
         state=estop_state
     else:
         state=manual_state
+    print (state)
 
 # left and right subscribers
-rospy.Subscriber(manualLeft,Float32,manualMotorleftCallback)
-rospy.Subscriber(manualRight,Float32,manualMotorrightCallback)
-rospy.Subscriber(autoLeft,Float32,autoMotorleftCallback)
-rospy.Subscriber(autoRight,Float32,autoMotorrightCallback)
+rospy.Subscriber(manualLeft,Float32,manualMotorleftCallback,queue_size=10)
+rospy.Subscriber(manualRight,Float32,manualMotorrightCallback,queue_size=10)
+rospy.Subscriber(autoLeft,Float32,autoMotorleftCallback,queue_size=10)
+rospy.Subscriber(autoRight,Float32,autoMotorrightCallback,queue_size=10)
 
 rospy.Subscriber(switchChannel,Float32,switchCallback)
 

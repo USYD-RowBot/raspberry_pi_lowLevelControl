@@ -28,12 +28,14 @@ def manualMotorleftCallback(data):
     global state
     global leftpub
     if state==manual_state:
+        print ("rl:{0}".format(data.data))
         leftpub.publish(data.data)
 
 def manualMotorrightCallback(data):
     global state
     global rightpub
     if state==manual_state:
+        print ("rr:{0}".format(data.data))
         rightpub.publish(data.data)
 
 def autoMotorleftCallback(data):

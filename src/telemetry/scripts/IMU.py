@@ -42,7 +42,7 @@ navio.util.check_apm()
 
 rospy.init_node("imusuite", anonymous=True)
 
-INSTRUMENT = rospy.get_param("instrument", "mpu")  # or lsm
+INSTRUMENT = rospy.get_param("instrument", "mpu")  # or lsm - but lsm is not implemented
 IMU_CHANNEL = rospy.get_param("imuChannel", "imu")
 MAG_CHANNEL = rospy.get_param("magChannel", "mag")
 
@@ -78,7 +78,6 @@ while not rospy.is_shutdown():
     # print "Gyroscope:     ", imu.gyroscope_data
     # print "Temperature:   ", imu.temperature
     # print "Magnetometer:  ", imu.magnetometer_data
-
     # time.sleep(0.1)
     h=Header()
     h.stamp=rospy.Time.now()

@@ -3,7 +3,8 @@ import rospy
 from std_msgs.msg import Float32,Bool
 import time
 rospy.init_node('switchController', anonymous=True)
-
+# Toggle between manual to estop to auto
+# Optional primer which fires when auto is started
 manualLeft=rospy.get_param("~manualLeft","left")
 manualRight=rospy.get_param("~manualRight","right")
 
@@ -62,7 +63,6 @@ def switchCallback(data):
         state=estop_state
     else:
         state=manual_state
-    print (state)
 
 # left and right subscribers
 rospy.Subscriber(manualLeft,Float32,manualMotorleftCallback,queue_size=10)
